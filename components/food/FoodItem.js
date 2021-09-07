@@ -19,9 +19,10 @@ const FoodItemStyles = styled.div`
   }
 
   .food-item-desc {
-    /* color: ${color.foregroundDim}; */
+    letter-spacing: 0.025em;
     font-size: 1em;
     margin-bottom: ${space.halfSpace};
+    line-height: 1.4em;
   }
 
   .food-item-options {

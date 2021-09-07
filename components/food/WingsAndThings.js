@@ -39,7 +39,7 @@ const WingsAndThings = () => (
       <div className="menu-padding">
         <h4>Wings & Things</h4>
         <div>
-          <div className="wings-item-desc">Sauces: Bbq, Mild, Hot, Blaze, Butter Garlic, Asian Zing</div>
+          <div className="wings-item-desc">Sauces: Bbq, Mild, Hot, Blaze, Butter Garlic, Asian Zing, Park Garlic</div>
         </div>
         <div className="wings-item">
           <div className="wings-item-name">Chicken Wings</div>

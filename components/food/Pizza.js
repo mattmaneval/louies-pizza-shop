@@ -6,27 +6,28 @@ import media from '../../styles/media';
 const { fonts, color, space } = theme;
 
 const PizzaStyles = styled.div`
+  background-color: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
-  .wrap {
-    /* padding: 3em 0; */
+  h4 {
+    color: ${color.background};
   }
 
   .price-background {
+    padding: 2em 0;
     background-color: ${color.backgroundTert};
-    /* padding: ${space.space}; */
-
+    
     h5 {
       color: ${color.background};
     }
   }
 
   .price-grid {
-
     color: ${color.background};
     display: grid;
     font-size: 1.25em;
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: ${space.space};
 
     @media ${media.secondary} {
       grid-template-columns: repeat(1, 1fr);
@@ -52,11 +53,11 @@ const PizzaStyles = styled.div`
   }
 
   .food-item-name {
-    color: ${color.foregroundAlt};
+    color: ${color.background};
   }
 
   .food-item-desc {
-    color: ${color.backgroundAlt};
+    color: ${color.foregroundAlt};
     font-family: ${fonts.heading};
   }
 `;
@@ -122,7 +123,7 @@ const pizzas = [
 
 const Pizza = () => (
   <PizzaStyles>
-    <div className="wrap">
+    <div className="wrap menu-padding">
       <h4>Pizza</h4>
       {Object.keys(pizzas).map((key) => (
         <FoodItem data={pizzas[key]} />
