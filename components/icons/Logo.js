@@ -12,6 +12,11 @@ const LogoImage = styled.div`
   background-position: center;
   height: 10em;
   width: 10em;
+
+  @media ${media.secondary} {
+    height: 6em;
+    width: 6em;
+  }
 `;
 
 const Logo = () => (

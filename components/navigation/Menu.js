@@ -36,12 +36,12 @@ const MenuStyles = styled.section`
     a {
       color: ${color.foreground};
       display: block;
-      padding-bottom: 0.5rem;
+      padding-bottom: 2rem;
       font-size: 5.5em;
       font-family: ${fonts.heading};
 
       @media ${media.secondary} {
-        font-size: 3.5em;
+        font-size: 2.5em;
       }
 
       &:hover {

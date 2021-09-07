@@ -55,7 +55,7 @@ const FooterStyles = styled.footer`
   .copyright,
   .copyright a {
     font-family: ${fonts.font};
-    font-size: 1.1rem;
+    font-size: 0.7em;
     letter-spacing: 0.1em;
     color: ${color.foregroundDim};
 

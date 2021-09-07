@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
 
     @media ${media.secondary} {
-      padding: 3em 0;
+      padding: 2em 0;
     }
   }
 
