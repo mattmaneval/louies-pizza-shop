@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import WingsAndThings from '../components/menu/WingsAndThings';
+import WingsAndThings from '../components/food/WingsAndThings';
 import Footer from '../components/Footer';
 
 const WingsAndThingsPage = () => (

@@ -120,10 +120,13 @@ const pizzas = [
   },
 ];
 
-const Pizza = ({ data }) => (
+const Pizza = () => (
   <PizzaStyles>
     <div className="wrap">
       <h4>Pizza</h4>
+      {Object.keys(pizzas).map((key) => (
+        <FoodItem data={pizzas[key]} />
+      ))}
     </div>
 
     <div className="price-background">
@@ -134,33 +137,33 @@ const Pizza = ({ data }) => (
             <div className="price-grid-area-title">Sizes</div>
             <div className="price-grid-cell">
               <span>Small</span>
-              <span>12"</span>
+              <span>12&quot;</span>
             </div>
             <div className="price-grid-cell">
               <span>Medium</span>
-              <span>16"</span>
+              <span>16&quot;</span>
             </div>
             <div className="price-grid-cell">
               <span>Large</span>
-              <span>18"</span>
+              <span>18&quot;</span>
             </div>
             <div className="price-grid-cell">
               <span>Bob</span>
-              <span>18" x 26"</span>
+              <span>18&quot; x 26&quot;</span>
             </div>
           </div>
           <div className="price-grid-area">
             <div className="price-grid-area-title">Cheese</div>
             <div className="price-grid-cell">
-              <span>Sm 12"</span>
+              <span>Sm 12&quot;</span>
               <span>8.25</span>
             </div>
             <div className="price-grid-cell">
-              <span>Med 16"</span>
+              <span>Med 16&quot;</span>
               <span>11.95</span>
             </div>
             <div className="price-grid-cell">
-              <span>Lg 18"</span>
+              <span>Lg 18&quot;</span>
               <span>12.6</span>
             </div>
             <div className="price-grid-cell">
@@ -210,7 +213,7 @@ const Pizza = ({ data }) => (
       </div>
     </div>
 
-      <div className="price-background">
+    <div className="price-background">
       <div className="wrap">
         <h5>Thin & Crispy</h5>
         <div className="price-grid">
@@ -218,67 +221,67 @@ const Pizza = ({ data }) => (
             <div className="price-grid-area-title">Sizes</div>
             <div className="price-grid-cell">
               <span>Small</span>
-              <span>12"</span>
+              <span>12&quot;</span>
             </div>
             <div className="price-grid-cell">
               <span>Large</span>
-              <span>16"</span>
+              <span>16&quot;</span>
             </div>
             <div className="price-grid-cell">
               <span>Gluten Free</span>
-              <span>12"</span>
+              <span>12&quot;</span>
             </div>
           </div>
           <div className="price-grid-area">
             <div className="price-grid-area-title">Cheese</div>
             <div className="price-grid-cell">
-              <span>12"</span>
+              <span>12&quot;</span>
               <span>8.25</span>
             </div>
             <div className="price-grid-cell">
-              <span>16"</span>
+              <span>16&quot;</span>
               <span>11.95</span>
             </div>
             <div className="price-grid-cell">
-              <span>12" GF</span>
+              <span>12&quot; GF</span>
               <span>12.24</span>
             </div>
           </div>
           <div className="price-grid-area">
             <div className="price-grid-area-title">1 Topping</div>
             <div className="price-grid-cell">
-              <span>12"</span>
+              <span>12&quot;</span>
               <span>9.30</span>
             </div>
             <div className="price-grid-cell">
-              <span>16"</span>
+              <span>16&quot;</span>
               <span>13.85</span>
             </div>
             <div className="price-grid-cell">
-              <span>12" GF</span>
+              <span>12&quot; GF</span>
               <span>13.29</span>
             </div>
           </div>
           <div className="price-grid-area">
             <div className="price-grid-area-title">+1 Topping</div>
             <div className="price-grid-cell">
-              <span>12"</span>
+              <span>12&quot;</span>
               <span>1.25</span>
             </div>
             <div className="price-grid-cell">
-              <span>16"</span>
+              <span>16&quot;</span>
               <span>2.00</span>
             </div>
             <div className="price-grid-cell">
-              <span>12" GF</span>
+              <span>12&quot; GF</span>
               <span>1.25</span>
             </div>
           </div>
         </div>
-        </div>
       </div>
+    </div>
 
-      <div className="price-background">
+    <div className="price-background">
       <div className="wrap">
         <h5>Specialty Pizzas</h5>
         <div className="price-grid">
@@ -317,14 +320,8 @@ const Pizza = ({ data }) => (
             </div>
           </div>
         </div>
-        </div>
       </div>
-
-      <div className="wrap">
-        {Object.keys(pizzas).map((key) => (
-          <FoodItem data={pizzas[key]} />
-        ))}
-      </div>
+    </div>
   </PizzaStyles>
 );
 

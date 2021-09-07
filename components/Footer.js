@@ -28,27 +28,29 @@ const FooterStyles = styled.footer`
   }
 
   .footer-contact {
+    color: ${color.foregroundAlt};
     width: 24em;
 
     &-name {
-      color: ${color.foreground};
       margin-bottom: ${space.halfSpace};
       font-size: 1.25em;
       font-family: ${fonts.subHeading};
     }
 
+    .address {
+      p {
+        color: ${color.foregroundAlt};
+      }
+    }
+
     a {
       ${footerLink.hover};
-      color: ${color.foreground};
+      color: ${color.foregroundAlt};
       font-family: ${fonts.font};
       line-height: 140%;
       font-size: 1.25em;
       letter-spacing: 0.05rem;
       display: block;
-    }
-
-    @media ${media.primary} {
-      margin-bottom: 3.5rem;
     }
   }
 
@@ -58,10 +60,12 @@ const FooterStyles = styled.footer`
     font-size: 0.7em;
     letter-spacing: 0.1em;
     color: ${color.foregroundDim};
+    line-height: 1.6em;
+
 
     a {
       display: inline-block;
-      color: ${color.backgroundTert};
+      color: ${color.foregroundAlt};
       text-decoration: underline;
       padding-bottom: 0;
     }

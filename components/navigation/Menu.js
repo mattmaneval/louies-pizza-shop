@@ -15,7 +15,7 @@ const MenuStyles = styled.section`
     display: flex;
     align-items: center;
     margin-bottom: 2em;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 
     span {
       margin-right: 1em;
@@ -36,7 +36,7 @@ const MenuStyles = styled.section`
     a {
       color: ${color.foreground};
       display: block;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       font-size: 5.5em;
       font-family: ${fonts.heading};
 
@@ -78,7 +78,7 @@ const Menu = () => (
         <a>Sides</a>
       </Link>
     </nav>
-    <div className="nav-border"></div>
+    <div className="nav-border" />
   </MenuStyles>
 );
 
