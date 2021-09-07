@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import FoodItem from './FoodItem';
+import BackButton from '../navigation/BackButton';
 import theme from '../../styles/theme';
 
 const { fonts, color, space } = theme;
@@ -107,6 +108,7 @@ const Subs = () => (
         ))}
       </div>
     </div>
+    <BackButton />
   </SubsStyle>
 );
 

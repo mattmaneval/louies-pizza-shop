@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import FoodItem from './FoodItem';
+import BackButton from '../navigation/BackButton';
 import theme from '../../styles/theme';
 
 const { color, fonts, space } = theme;
@@ -79,6 +80,7 @@ const Sides = () => (
         <FoodItem data={sidesData[key]} />
       ))}
     </div>
+    <BackButton />
   </SidesStyle>
 );
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BackButton from '../navigation/BackButton';
 import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
@@ -56,6 +57,7 @@ const WingsAndThings = () => (
         </div>
       </div>
     </div>
+    <BackButton />
   </WingsAndThingsStyle>
 );
 

@@ -4,7 +4,7 @@ import ArrowLeftCircle from '../icons/ArrowLeftCircle';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color } = theme;
 
 const BackButtonStyle = styled.div`
   position: fixed;
@@ -20,11 +20,15 @@ const BackButtonStyle = styled.div`
     bottom: 0;
   }
 
-  svg {
-    &, use {
-      fill: ${color.background};
-      height: 5em;
-      width: 5em;
+  a {
+    display: inline-block;
+
+    svg {
+      &, use {
+        fill: ${color.background};
+        height: 5em;
+        width: 5em;
+      }
     }
   }
 `;
@@ -32,7 +36,9 @@ const BackButtonStyle = styled.div`
 const BackButton = () => (
   <BackButtonStyle>
     <Link href="/">
-      <ArrowLeftCircle />
+      <a>
+        <ArrowLeftCircle />
+      </a>
     </Link>
   </BackButtonStyle>
 );

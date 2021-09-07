@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import FoodItem from './FoodItem';
+import BackButton from '../navigation/BackButton';
 import theme from '../../styles/theme';
 import media from '../../styles/media';
-import BackButton from '../navigation/BackButton';
 
 const { fonts, color, space } = theme;
 
