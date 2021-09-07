@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Price from './Price';
 import FoodItem from './FoodItem';
 import theme from '../../styles/theme';
 import media from '../../styles/media';
