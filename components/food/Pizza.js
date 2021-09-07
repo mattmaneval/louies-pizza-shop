@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import FoodItem from './FoodItem';
 import theme from '../../styles/theme';
 import media from '../../styles/media';
+import BackButton from '../navigation/BackButton';
 
 const { fonts, color, space } = theme;
 
@@ -16,7 +17,7 @@ const PizzaStyles = styled.div`
   .price-background {
     padding: 2em 0;
     background-color: ${color.backgroundTert};
-    
+
     h5 {
       color: ${color.background};
     }
@@ -323,6 +324,7 @@ const Pizza = () => (
         </div>
       </div>
     </div>
+    <BackButton />
   </PizzaStyles>
 );
 
