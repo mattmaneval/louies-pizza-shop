@@ -34,11 +34,12 @@ const MenuStyles = styled.section`
     margin-bottom: ${space.halfSpace};
 
     a {
-      color: ${color.foreground};
+      color: ${color.foregroundDim};
       display: block;
       padding-bottom: 1rem;
       font-size: 5.5em;
       font-family: ${fonts.heading};
+      /* -webkit-text-stroke: 2px ${color.foreground}; */
 
       @media ${media.secondary} {
         font-size: 2.5em;

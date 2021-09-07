@@ -5,11 +5,8 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const BurgersStyle = styled.div`
+  background-color: ${color.foregroundDim};
   margin-bottom: ${space.space};
-
-  .wrap {
-    background-color: ${color.foregroundDim};
-  }
 
   .burger-prices {
     font-family: ${fonts.heading};

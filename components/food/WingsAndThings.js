@@ -5,11 +5,8 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const WingsAndThingsStyle = styled.div`
+  background: ${color.foregroundDim};
   margin-bottom: ${space.space};
-
-  .wrap {
-    background: ${color.foregroundDim}
-  }
 
   h4 {
     color: ${color.foreground};

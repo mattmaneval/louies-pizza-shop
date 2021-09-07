@@ -9,7 +9,7 @@ const PizzaStyles = styled.div`
   margin-bottom: ${space.space};
 
   .wrap {
-    padding: 3em 0;
+    /* padding: 3em 0; */
   }
 
   .price-background {

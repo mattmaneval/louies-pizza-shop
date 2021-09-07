@@ -5,11 +5,8 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const SubsStyle = styled.div`
+background-color: ${color.foregroundTert};
   margin-bottom: ${space.space};
-
-  .wrap {
-    background-color: ${color.foregroundTert};
-  }
 
   h4 {
     color: ${color.background};

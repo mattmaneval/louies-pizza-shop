@@ -17,8 +17,8 @@ const footerLink = {
 };
 
 const FooterStyles = styled.footer`
-  ${mixins.section};
-
+  padding: 3em 0;
+  
   .wrap {
     display: flex;
 

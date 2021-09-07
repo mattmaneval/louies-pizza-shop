@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
 
     @media ${media.secondary} {
-      padding: 2em 0;
+      padding: 1em 0;
     }
   }
 
@@ -86,15 +86,15 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: ${color.foreground};
     margin-bottom: 3rem;
-    font-size: 4em;
+    font-size: 6em;
     font-family: ${fonts.heading};
 
     @media ${media.secondary} {
-      font-size: 3.5em;
+      font-size: 4.5em;
     }
 
     @media ${media.smallPhone} {
-      font-size: 2.5em;
+      font-size: 3.5em;
     }
   }
 
@@ -138,7 +138,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .menu-padding {
-    padding: 2em;
+    padding: 2em 0;
   }
 `;
 
