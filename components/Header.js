@@ -3,10 +3,10 @@ import Logo from './icons/Logo';
 import media from '../styles/media';
 
 const HeaderStyles = styled.header`
-  padding: 3em 0 0 0;
+  padding: 3em 0;
 
   @media ${media.secondary} {
-    padding: 2em 0 0 0;
+    padding: 2em 0;
   }
 `;
 

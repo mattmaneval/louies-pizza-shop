@@ -8,10 +8,13 @@ const { fonts, color, space } = theme;
 const PizzaStyles = styled.div`
   margin-bottom: ${space.space};
 
+  .wrap {
+    padding: 3em 0;
+  }
+
   .price-background {
     background-color: ${color.backgroundTert};
-    margin-bottom: ${space.space};
-    padding: ${space.space};
+    /* padding: ${space.space}; */
 
     h5 {
       color: ${color.background};
@@ -24,8 +27,6 @@ const PizzaStyles = styled.div`
     display: grid;
     font-size: 1.25em;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: ${space.space};
-
 
     @media ${media.secondary} {
       grid-template-columns: repeat(1, 1fr);
@@ -123,8 +124,10 @@ const Pizza = ({ data }) => (
   <PizzaStyles>
     <div className="wrap">
       <h4>Pizza</h4>
+    </div>
 
-      <div className="price-background">
+    <div className="price-background">
+      <div className="wrap">
         <h5>Original Crust</h5>
         <div className="price-grid">
           <div className="price-grid-area">
@@ -205,8 +208,10 @@ const Pizza = ({ data }) => (
           </div>
         </div>
       </div>
+    </div>
 
       <div className="price-background">
+      <div className="wrap">
         <h5>Thin & Crispy</h5>
         <div className="price-grid">
           <div className="price-grid-area">
@@ -270,9 +275,11 @@ const Pizza = ({ data }) => (
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       <div className="price-background">
+      <div className="wrap">
         <h5>Specialty Pizzas</h5>
         <div className="price-grid">
           <div className="price-grid-area">
@@ -310,12 +317,14 @@ const Pizza = ({ data }) => (
             </div>
           </div>
         </div>
+        </div>
       </div>
 
-      {Object.keys(pizzas).map((key) => (
-        <FoodItem data={pizzas[key]} />
-      ))}
-    </div>
+      <div className="wrap">
+        {Object.keys(pizzas).map((key) => (
+          <FoodItem data={pizzas[key]} />
+        ))}
+      </div>
   </PizzaStyles>
 );
 
