@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import theme from '../../styles/theme';
 import mixins from '../../styles/mixins';
-import GlutenFree from '../icons/Gluten-Free';
 
 const { fonts, space, color } = theme;
 

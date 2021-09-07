@@ -77,15 +77,6 @@ const Menu = () => (
       <Link href="/sides">
         <a>Sides</a>
       </Link>
-      <Link href="/private-events">
-        <a>Salads</a>
-      </Link>
-      <Link href="/private-events">
-        <a>Pasta</a>
-      </Link>
-      <Link href="/about">
-        <a>Ice Cream</a>
-      </Link>
     </nav>
     <div className="nav-border"></div>
   </MenuStyles>
