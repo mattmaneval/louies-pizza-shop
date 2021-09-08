@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    padding: 0 0 6em 0;
+    padding: 6em 0;
     display: inline-block;
     position: relative;
     clear: both;

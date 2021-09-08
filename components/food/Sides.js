@@ -6,6 +6,7 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const SidesStyle = styled.div`
+  background-color: ${color.foregroundDim};
   margin-bottom: ${space.space};
 
   .side-prices {

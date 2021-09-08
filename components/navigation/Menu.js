@@ -26,6 +26,7 @@ const MenuStyles = styled.section`
       height: 1px;
       flex: 1 1 0%;
       background-color: currentcolor;
+      opacity: 20%;
     }
   }
 
@@ -54,6 +55,7 @@ const MenuStyles = styled.section`
 
   .nav-border {
     border-bottom: 1px solid ${color.foregroundAlt};
+    opacity: 20%;
   }
 `;
 
