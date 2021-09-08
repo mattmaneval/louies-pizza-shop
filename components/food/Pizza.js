@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import FoodItem from './FoodItem';
 import SpecialtyPizzaPrices from './price-tables/specialty-pizza-prices';
+import OriginalCrustPrices from './price-tables/original-crust-prices';
+import ThinAndCrispyPrices from './price-tables/thin-and-crispy-prices';
 import BackButton from '../navigation/BackButton';
 import theme from '../../styles/theme';
 
@@ -78,12 +80,14 @@ const pizzas = [
 const Pizza = () => (
   <PizzaStyles>
     <div className="wrap">
-      <h4>Pizza</h4>
+      <h4>Specialty Pizza</h4>
       <SpecialtyPizzaPrices />
       {Object.keys(pizzas).map((key) => (
         <FoodItem data={pizzas[key]} />
       ))}
-
+      <h4>Build Your Own</h4>
+      <OriginalCrustPrices />
+      <ThinAndCrispyPrices />
       <BackButton />
     </div>
   </PizzaStyles>

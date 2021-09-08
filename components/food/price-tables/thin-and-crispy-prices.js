@@ -5,7 +5,7 @@ import theme from '../../../styles/theme';
 
 const { fonts, color, space } = theme;
 
-const SpecialtyPizzaPricesStyle = styled.div`
+const ThinAndCrispyStyle = styled.div`
   text-align: left;
   color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
@@ -25,16 +25,16 @@ const SpecialtyPizzaPricesStyle = styled.div`
     th {
       width: 10em;
       padding: ${space.quarterSpace};
+    }
+
+    td {
+      padding: ${space.quarterSpace};
 
       svg {
         width: 1.25em;
         height: 1.25em;
         fill: ${color.foregroundAlt};
       }
-    }
-
-    td {
-      padding: ${space.quarterSpace};
     }
 
     .gluten-free {
@@ -49,58 +49,45 @@ const SpecialtyPizzaPricesStyle = styled.div`
   }
 `;
 
-const sm = 14.95;
-const med = 21.95;
-const lg = 26.95;
-const bob = 36.95;
-const smThin = 14.85;
-const lgThin = 21.95;
-const glutenFree = 18.84;
-
-function SpecialtyPizzaPrices() {
+function ThinAndCrispyPrices() {
   return (
-    <SpecialtyPizzaPricesStyle>
-      <div className="table-heading">Original Crust</div>
-      <table>
-        <thead>
-          <tr>
-            <th>Small</th>
-            <th>Medium</th>
-            <th>Large</th>
-            <th>Bob</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{sm}</td>
-            <td>{med}</td>
-            <td>{lg}</td>
-            <td>{bob}</td>
-          </tr>
-        </tbody>
-      </table>
+    <ThinAndCrispyStyle>
       <div className="table-heading">Thin & Crispy</div>
       <table>
         <thead>
           <tr>
-            <th>Sm Thin</th>
-            <th>Lg Thin</th>
-            <th colSpan="2" className="gluten-free">
-              <span>Sm</span>
-              <GlutenFree />
-            </th>
+            <th />
+            <th>Cheese</th>
+            <th>1 Topping</th>
+            <th>+1 Topping</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{smThin}</td>
-            <td>{lgThin}</td>
-            <td>{glutenFree}</td>
+            <td>Small</td>
+            <td>8.25</td>
+            <td>9.30</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td>11.95</td>
+            <td>13.85</td>
+            <td>2.00</td>
+          </tr>
+          <tr>
+            <td colSpan="2" className="gluten-free">
+              <span>Sm</span>
+              <GlutenFree />
+            </td>
+            <td>12.24</td>
+            <td>13.29</td>
+            <td>1.25</td>
           </tr>
         </tbody>
       </table>
-    </SpecialtyPizzaPricesStyle>
+    </ThinAndCrispyStyle>
   );
 }
 
-export default SpecialtyPizzaPrices;
+export default ThinAndCrispyPrices;
