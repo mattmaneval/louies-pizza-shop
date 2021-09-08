@@ -1,12 +1,33 @@
 import styled from 'styled-components';
 import Logo from './icons/Logo';
+import CallCta from './navigation/CallCta';
 import media from '../styles/media';
+import mixins from '../styles/mixins';
+import theme from '../styles/theme';
+
+const { color, fonts, space } = theme;
 
 const HeaderStyles = styled.header`
-  padding: 3em 0;
+  padding: 1.5em 0;
+  font-size: 1em;
+  font-family: ${fonts.heading};
+  color: ${color.backgroundTert};
 
   @media ${media.secondary} {
     padding: 2em 0;
+  }
+
+  .wrap {
+    ${mixins.flexBetween};
+  }
+
+  .header-meta {
+    text-align: right;
+  }
+
+  a {
+    color: ${color.backgroundTert};
+    transform: translateX(1em);
   }
 `;
 
@@ -16,6 +37,11 @@ function Header() {
       <div className="wrap">
         <div className="header-logo">
           <Logo />
+        </div>
+        <div className="header-meta">
+          <CallCta />
+          <div>Sun - Thur 11 - 9</div>
+          <div>Fri - Sat 11 - 11</div>
         </div>
       </div>
     </HeaderStyles>

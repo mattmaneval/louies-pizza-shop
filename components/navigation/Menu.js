@@ -7,11 +7,11 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const MenuStyles = styled.section`
-  ${mixins.wrap}
+  background-color: ${color.foregroundTert};
 
   .nav-heading {
     font-family: ${fonts.fontMedium};
-    color: ${color.foregroundAlt};
+    color: ${color.background};
     display: flex;
     align-items: center;
     margin-bottom: 2em;
@@ -26,7 +26,6 @@ const MenuStyles = styled.section`
       height: 1px;
       flex: 1 1 0%;
       background-color: currentcolor;
-      opacity: 20%;
     }
   }
 
@@ -35,53 +34,59 @@ const MenuStyles = styled.section`
     margin-bottom: ${space.halfSpace};
 
     a {
-      color: ${color.foregroundDim};
+      color: ${color.background};
       display: block;
       padding-bottom: 1rem;
       font-size: 5.5em;
       font-family: ${fonts.heading};
-      /* -webkit-text-stroke: 2px ${color.foreground}; */
+      /* -webkit-text-stroke: 2px ${color.backgroundTert}; */
 
       @media ${media.secondary} {
         font-size: 2.5em;
       }
 
+      /* &:nth-child(even) {
+        color: ${color.background};
+      } */
+
       &:hover {
         ${mixins.animate}
-        color: ${color.foregroundAlt};
+        color: ${color.foreground
+        };
       }
     }
   }
 
   .nav-border {
-    border-bottom: 1px solid ${color.foregroundAlt};
-    opacity: 20%;
+    border-bottom: 1px solid ${color.background};
   }
 `;
 
 const Menu = () => (
   <MenuStyles>
-    <div className="nav-heading">
-      <span>Online Menu</span>
+    <div className="wrap">
+      <div className="nav-heading">
+        <span>Online Menu</span>
+      </div>
+      <nav className="mobile-nav">
+        <Link href="/pizza">
+          <a>Pizza</a>
+        </Link>
+        <Link href="/subs">
+          <a>Gigantic Subs</a>
+        </Link>
+        <Link href="/burgers">
+          <a>Prime Beef Burgers</a>
+        </Link>
+        <Link href="/wings-and-things">
+          <a>Wings & Things</a>
+        </Link>
+        <Link href="/sides">
+          <a>Sides</a>
+        </Link>
+      </nav>
+      <div className="nav-border" />
     </div>
-    <nav className="mobile-nav">
-      <Link href="/pizza">
-        <a>Pizza</a>
-      </Link>
-      <Link href="/subs">
-        <a>Gigantic Subs</a>
-      </Link>
-      <Link href="/burgers">
-        <a>Prime Beef Burgers</a>
-      </Link>
-      <Link href="/wings-and-things">
-        <a>Wings & Things</a>
-      </Link>
-      <Link href="/sides">
-        <a>Sides</a>
-      </Link>
-    </nav>
-    <div className="nav-border" />
   </MenuStyles>
 );
 

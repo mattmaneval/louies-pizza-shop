@@ -5,8 +5,8 @@ import theme from '../../styles/theme';
 
 const { fonts, color, space } = theme;
 
-const SubsStyle = styled.div`
-background-color: ${color.foregroundTert};
+const SubsStyle = styled.section`
+  background-color: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
   h4 {
@@ -16,12 +16,24 @@ background-color: ${color.foregroundTert};
   .sub-prices {
     font-family: ${fonts.heading};
     color: ${color.background};
-    margin-bottom: ${space.space};
+    margin-bottom: 4.5em;
 
     &-row {
       display: flex;
       margin-bottom: ${space.quarterSpace};
+
+      span:first-of-type {
+        margin-right: ${space.space};
+      }
     }
+
+    &-row:first-of-type {
+      margin-bottom: ${space.space};
+    }
+  }
+
+  .details {
+    color: ${color.backgroundTert};
   }
 
   .food-item-name {
@@ -77,36 +89,34 @@ const subsData = [
   },
   {
     name: 'Ham',
-    desc: '',
+    desc: 'Choice of veggie toppings',
   },
   {
     name: 'Roast Beef',
-    desc: '',
+    desc: 'Choice of veggie toppings',
   },
   {
     name: 'Turkey',
-    desc: '',
+    desc: 'Choice of veggie toppings',
   },
 ];
 
 const Subs = () => (
   <SubsStyle>
     <div className="wrap">
-      <div className="menu-padding">
-        <h4>Gigantic Subs</h4>
-        <div className="sub-prices">
-          <div className="sub-prices-row">
-            <span>Half 8" 7.10</span>
-            <span>Whole 16" 13.00</span>
-          </div>
-          <div className="sub-prices-row">Turn any sub into a calzone - 7.65</div>
-          <div className="sub-prices-row">Make any sub or calzone a basket with fries and slaw - 2.35</div>
-          <div className="sub-prices-row">Extra meat - 1.00 Extra cheese - .50</div>
+      <h4>Gigantic Subs</h4>
+      <div className="sub-prices">
+        <div className="sub-prices-row">
+          <span>Half 8" 7.10</span>
+          <span>Whole 16" 13.00</span>
         </div>
-        {Object.keys(subsData).map((key) => (
-          <FoodItem data={subsData[key]} />
-        ))}
+        <div className="sub-prices-row details">Turn any sub into a calzone - 7.65</div>
+        <div className="sub-prices-row details">Make any sub or calzone a basket with fries and slaw - 2.35</div>
+        <div className="sub-prices-row details">Extra meat - 1.00 Extra cheese - .50</div>
       </div>
+      {Object.keys(subsData).map((key) => (
+        <FoodItem data={subsData[key]} />
+      ))}
     </div>
     <BackButton />
   </SubsStyle>

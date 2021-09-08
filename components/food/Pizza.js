@@ -20,7 +20,7 @@ const PizzaStyles = styled.section`
   }
 
   .food-item-desc {
-    color: ${color.foregroundAlt};
+    color: ${color.backgroundTert};
     font-family: ${fonts.heading};
   }
 `;

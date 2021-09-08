@@ -13,7 +13,6 @@ const FoodItemStyles = styled.div`
     ${mixins.flexBetween};
     margin-bottom: ${space.quarterSpace};
     /* color: ${color.foregroundAlt}; */
-    font-weight: bold;
     font-size: 1.5em;
     font-family: ${fonts.heading};
   }

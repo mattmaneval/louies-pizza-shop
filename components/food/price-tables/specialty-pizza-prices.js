@@ -7,7 +7,7 @@ const { fonts, color, space } = theme;
 
 const SpecialtyPizzaPricesStyle = styled.div`
   text-align: left;
-  color: ${color.foregroundAlt};
+  color: ${color.backgroundTert};
   font-family: ${fonts.heading};
 
   .table-heading {
@@ -29,7 +29,7 @@ const SpecialtyPizzaPricesStyle = styled.div`
       svg {
         width: 1.25em;
         height: 1.25em;
-        fill: ${color.foregroundAlt};
+        fill: ${color.backgroundTert};
       }
     }
 

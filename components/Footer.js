@@ -29,24 +29,25 @@ const FooterStyles = styled.footer`
 
   .footer-contact {
     color: ${color.foregroundAlt};
+    font-family: ${fonts.fontMedium};
     width: 24em;
 
     &-name {
       margin-bottom: ${space.halfSpace};
       font-size: 1.25em;
-      font-family: ${fonts.subHeading};
+      font-family: ${fonts.fontMedium};
     }
 
     .address {
       p {
         color: ${color.foregroundAlt};
+        font-family: ${fonts.fontMedium};
       }
     }
 
     a {
       ${footerLink.hover};
       color: ${color.foregroundAlt};
-      font-family: ${fonts.font};
       line-height: 140%;
       font-size: 1.25em;
       letter-spacing: 0.05rem;
@@ -56,7 +57,7 @@ const FooterStyles = styled.footer`
 
   .copyright,
   .copyright a {
-    font-family: ${fonts.font};
+    font-family: ${fonts.fontMedium};
     font-size: 0.7em;
     letter-spacing: 0.1em;
     color: ${color.foregroundDim};
