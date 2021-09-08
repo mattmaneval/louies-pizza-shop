@@ -19,7 +19,7 @@ const CallCtaStyle = styled.a`
   svg {
     width: 1em;
     height: 1em;
-    fill: ${color.backgroundTert};
+    fill: ${color.foreground};
     margin-right: ${space.quarterSpace};
   }
 `;

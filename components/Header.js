@@ -11,7 +11,7 @@ const HeaderStyles = styled.header`
   padding: 1.5em 0;
   font-size: 1em;
   font-family: ${fonts.heading};
-  color: ${color.backgroundTert};
+  color: ${color.foreground};
 
   @media ${media.secondary} {
     padding: 2em 0;
@@ -26,7 +26,6 @@ const HeaderStyles = styled.header`
   }
 
   a {
-    color: ${color.backgroundTert};
     transform: translateX(1em);
   }
 `;

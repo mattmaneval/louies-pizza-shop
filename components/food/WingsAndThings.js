@@ -6,7 +6,7 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const WingsAndThingsStyle = styled.div`
-  background: ${color.foregroundDim};
+  background: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
   h4 {
@@ -26,7 +26,7 @@ const WingsAndThingsStyle = styled.div`
     }
 
     &-desc {
-      color: ${color.foreground};
+      color: ${color.background};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       font-family: ${fonts.heading};

@@ -12,7 +12,7 @@ const PizzaStyles = styled.section`
   background-color: ${color.foregroundTert};
 
   h4 {
-    color: ${color.background};
+    color: ${color.foreground};
   }
 
   .food-item-name {
@@ -20,7 +20,7 @@ const PizzaStyles = styled.section`
   }
 
   .food-item-desc {
-    color: ${color.backgroundTert};
+    color: ${color.foreground};
     font-family: ${fonts.heading};
   }
 `;

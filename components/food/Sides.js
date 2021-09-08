@@ -5,27 +5,21 @@ import theme from '../../styles/theme';
 
 const { color, fonts, space } = theme;
 
-const SidesStyle = styled.div`
-  background-color: ${color.foregroundDim};
+const SidesStyle = styled.section`
+  background-color: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
   .side-prices {
     font-family: ${fonts.heading};
-    color: ${color.background};
-    margin-bottom: ${space.space};
-
-    &-row {
-      display: flex;
-      margin-bottom: ${space.quarterSpace};
-    }
+    color: ${color.foreground};
   }
 
   .food-item-name {
-    color: ${color.backgroundAlt};
+    color: ${color.foreground};
   }
 
   .food-item-desc {
-    color: ${color.foregroundAlt};
+    color: ${color.background};
     font-family: ${fonts.heading};
   }
 `;

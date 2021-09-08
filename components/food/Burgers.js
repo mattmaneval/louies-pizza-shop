@@ -6,7 +6,7 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const BurgersStyle = styled.div`
-  background-color: ${color.foregroundDim};
+  background-color: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
   .burger-prices {
@@ -21,11 +21,11 @@ const BurgersStyle = styled.div`
   }
 
   .food-item-name {
-    color: ${color.foreground};
+    color: ${color.background};
   }
 
   .food-item-desc {
-    color: ${color.background};
+    color: ${color.foreground};
     font-family: ${fonts.heading};
   }
 `;

@@ -16,7 +16,7 @@ const SubsStyle = styled.section`
   .sub-prices {
     font-family: ${fonts.heading};
     color: ${color.background};
-    margin-bottom: 4.5em;
+    margin-bottom: 3em;
 
     &-row {
       display: flex;

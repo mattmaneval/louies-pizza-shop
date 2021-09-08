@@ -6,11 +6,10 @@ const { fonts, color, space } = theme;
 
 const OriginalCrustStyle = styled.div`
   text-align: left;
-  color: ${color.backgroundTert};
+  color: ${color.foreground};
   font-family: ${fonts.heading};
 
   .table-heading {
-    margin-bottom: ${space.quarterSpace};
     color: ${color.background};
   }
 
@@ -28,7 +27,7 @@ const OriginalCrustStyle = styled.div`
       svg {
         width: 1.25em;
         height: 1.25em;
-        fill: ${color.foregroundAlt};
+        fill: ${color.foreground};
       }
     }
 
