@@ -55,10 +55,10 @@ function OriginalCrustPrices() {
       <table>
         <thead>
           <tr>
-            <th />
-            <th>Cheese</th>
-            <th>1 Topping</th>
-            <th>+1 Topping</th>
+            <th>Size</th>
+            <th>Chz</th>
+            <th>1 Tpg</th>
+            <th>+1 Tpg</th>
           </tr>
         </thead>
         <tbody>

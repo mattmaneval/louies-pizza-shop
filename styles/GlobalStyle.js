@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
 
     @media ${media.secondary} {
-      padding: 1em 0;
+      padding: 3em 0;
     }
   }
 
@@ -86,15 +86,15 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     color: ${color.foreground};
     margin-bottom: 3rem;
-    font-size: 6em;
+    font-size: 4.5em;
     font-family: ${fonts.heading};
 
     @media ${media.secondary} {
-      font-size: 4.5em;
+      font-size: 3em;
     }
 
     @media ${media.smallPhone} {
-      font-size: 3.5em;
+      font-size: 2.5em;
     }
   }
 

@@ -16,7 +16,7 @@ const ThinAndCrispyStyle = styled.div`
   }
 
   table {
-    margin-bottom: ${space.space};
+    /* margin-bottom: 6em; */
 
     @media ${media.secondary} {
       width: 100%;
@@ -56,10 +56,10 @@ function ThinAndCrispyPrices() {
       <table>
         <thead>
           <tr>
-            <th />
-            <th>Cheese</th>
-            <th>1 Topping</th>
-            <th>+1 Topping</th>
+            <th>Size</th>
+            <th>Chz</th>
+            <th>1 Tpg</th>
+            <th>+1 Tpg</th>
           </tr>
         </thead>
         <tbody>

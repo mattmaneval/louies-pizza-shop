@@ -10,7 +10,6 @@ const { fonts, color, space } = theme;
 
 const PizzaStyles = styled.section`
   background-color: ${color.foregroundTert};
-  margin-bottom: ${space.space};
 
   h4 {
     color: ${color.background};

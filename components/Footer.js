@@ -17,8 +17,8 @@ const footerLink = {
 };
 
 const FooterStyles = styled.footer`
-  padding: 3em 0;
-  
+  padding: 6em 0;
+
   .wrap {
     display: flex;
 

@@ -7,7 +7,7 @@ const { fonts, space, color } = theme;
 
 const FoodItemStyles = styled.div`
   font-family: ${fonts.font};
-  margin-bottom: ${space.space};
+  margin-bottom: 3em;
 
   .food-item-name {
     ${mixins.flexBetween};
@@ -45,11 +45,7 @@ const FoodItemStyles = styled.div`
 
 const FoodItem = ({ data }) => (
   <FoodItemStyles>
-    <div className="food-item-name">
-      <div>
-        {data.name}
-      </div>
-    </div>
+    <div className="food-item-name">{data.name}</div>
     <div className="food-item-desc">{data.desc ? data.desc : null }</div>
   </FoodItemStyles>
 );
