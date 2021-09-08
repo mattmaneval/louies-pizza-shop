@@ -45,14 +45,9 @@ const MenuStyles = styled.section`
         font-size: 2.5em;
       }
 
-      /* &:nth-child(even) {
-        color: ${color.background};
-      } */
-
       &:hover {
         ${mixins.animate}
-        color: ${color.foreground
-        };
+        color: ${color.foreground};
       }
     }
   }
@@ -83,6 +78,15 @@ const Menu = () => (
         </Link>
         <Link href="/sides">
           <a>Sides</a>
+        </Link>
+        <Link href="/pasta">
+          <a>Pasta</a>
+        </Link>
+        <Link href="/salads">
+          <a>Salads</a>
+        </Link>
+        <Link href="/ice-cream">
+          <a>Ice Cream</a>
         </Link>
       </nav>
       <div className="nav-border" />

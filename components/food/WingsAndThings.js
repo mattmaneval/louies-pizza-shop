@@ -19,14 +19,14 @@ const WingsAndThingsStyle = styled.div`
     &-name {
       ${mixins.flexBetween};
       margin-bottom: ${space.quarterSpace};
-      color: ${color.foreground};
+      color: ${color.background};
       font-weight: bold;
       font-size: 1.5em;
       font-family: ${fonts.heading};
     }
 
     &-desc {
-      color: ${color.background};
+      color: ${color.foreground};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       font-family: ${fonts.heading};

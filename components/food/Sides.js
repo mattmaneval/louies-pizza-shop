@@ -11,15 +11,15 @@ const SidesStyle = styled.section`
 
   .side-prices {
     font-family: ${fonts.heading};
-    color: ${color.foreground};
+    color: ${color.background};
   }
 
   .food-item-name {
-    color: ${color.foreground};
+    color: ${color.background};
   }
 
   .food-item-desc {
-    color: ${color.background};
+    color: ${color.foreground};
     font-family: ${fonts.heading};
   }
 `;

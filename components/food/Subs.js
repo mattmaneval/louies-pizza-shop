@@ -10,12 +10,12 @@ const SubsStyle = styled.section`
   margin-bottom: ${space.space};
 
   h4 {
-    color: ${color.background};
+    color: ${color.foreground};
   }
 
   .sub-prices {
     font-family: ${fonts.heading};
-    color: ${color.background};
+    color: ${color.foreground};
     margin-bottom: 3em;
 
     &-row {
@@ -33,7 +33,7 @@ const SubsStyle = styled.section`
   }
 
   .details {
-    color: ${color.backgroundTert};
+    color: ${color.background};
   }
 
   .food-item-name {
@@ -41,7 +41,7 @@ const SubsStyle = styled.section`
   }
 
   .food-item-desc {
-    color: ${color.backgroundTert};
+    color: ${color.foreground};
     font-family: ${fonts.heading};
   }
 `;

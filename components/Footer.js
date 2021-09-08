@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Logo from './icons/Logo';
 import mixins from '../styles/mixins';
 import theme from '../styles/theme';
 import media from '../styles/media';
@@ -21,33 +22,28 @@ const FooterStyles = styled.footer`
 
   .wrap {
     display: flex;
+    align-items: center;
+  }
 
-    @media ${media.primary} {
-      flex-direction: column;
-    }
+  .footer-logo {
+    margin-right: ${space.space};
   }
 
   .footer-contact {
-    color: ${color.foregroundAlt};
+    color: ${color.foreground};
     font-family: ${fonts.fontMedium};
     width: 24em;
 
-    &-name {
-      margin-bottom: ${space.halfSpace};
-      font-size: 1.25em;
-      font-family: ${fonts.fontMedium};
-    }
-
     .address {
       p {
-        color: ${color.foregroundAlt};
+        color: ${color.foreground};
         font-family: ${fonts.fontMedium};
       }
     }
 
     a {
       ${footerLink.hover};
-      color: ${color.foregroundAlt};
+      color: ${color.foreground};
       line-height: 140%;
       font-size: 1.25em;
       letter-spacing: 0.05rem;
@@ -66,7 +62,7 @@ const FooterStyles = styled.footer`
 
     a {
       display: inline-block;
-      color: ${color.foregroundAlt};
+      color: currentColor;
       text-decoration: underline;
       padding-bottom: 0;
     }
@@ -83,8 +79,10 @@ const year = new Date().getFullYear();
 const Footer = () => (
   <FooterStyles>
     <div className="wrap">
+      <div className="footer-logo">
+        <Logo />
+      </div>
       <div className="footer-contact">
-        <div className="footer-contact-name">Louie's Pizza Shop</div>
         <a href="tel:419-931-0281">419-237-3737</a>
         <div className="address">
           <p>109 E. Main St.</p>
