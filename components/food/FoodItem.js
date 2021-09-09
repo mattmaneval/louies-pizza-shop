@@ -23,23 +23,6 @@ const FoodItemStyles = styled.div`
     margin-bottom: ${space.halfSpace};
     line-height: 1.4em;
   }
-
-  .food-item-options {
-    display: flex;
-    align-items: center;
-    color: ${color.foreground};
-    text-transform: uppercase;
-    font-family: ${fonts.fontBold};
-    letter-spacing: 0.25em;
-    font-size: 0.8em;
-
-    svg {
-      width: 1.5em;
-      height: 1.5em;
-      fill: rgb(0, 160, 72);;
-      margin-right: 0.85em;
-    }
-  }
 `;
 
 const FoodItem = ({ data }) => (

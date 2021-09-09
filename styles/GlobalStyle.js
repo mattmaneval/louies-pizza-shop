@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     clear: both;
     float: none;
     width: 100%;
+    background-color: ${color.foregroundTert};
 
     @media ${media.secondary} {
       padding: 3em 0;

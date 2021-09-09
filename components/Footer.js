@@ -31,13 +31,13 @@ const FooterStyles = styled.footer`
 
   .footer-contact {
     color: ${color.foreground};
-    font-family: ${fonts.fontMedium};
+    font-family: ${fonts.heading};
     width: 24em;
 
     .address {
       p {
         color: ${color.foreground};
-        font-family: ${fonts.fontMedium};
+        font-family: ${fonts.heading};
       }
     }
 

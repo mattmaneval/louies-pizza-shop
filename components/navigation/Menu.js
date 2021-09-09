@@ -10,7 +10,7 @@ const MenuStyles = styled.section`
   background-color: ${color.foregroundTert};
 
   .nav-heading {
-    font-family: ${fonts.fontMedium};
+    font-family: ${fonts.heading};
     color: ${color.background};
     display: flex;
     align-items: center;
@@ -68,13 +68,16 @@ const Menu = () => (
           <a>Pizza</a>
         </Link>
         <Link href="/subs">
-          <a>Gigantic Subs</a>
-        </Link>
-        <Link href="/burgers">
-          <a>Prime Beef Burgers</a>
+          <a>Subs</a>
         </Link>
         <Link href="/wings-and-things">
-          <a>Wings & Things</a>
+          <a>Wings</a>
+        </Link>
+        <Link href="/burgers">
+          <a>Burgers</a>
+        </Link>
+        <Link href="/family-combos">
+          <a>Family Combos</a>
         </Link>
         <Link href="/sides">
           <a>Sides</a>
@@ -87,6 +90,9 @@ const Menu = () => (
         </Link>
         <Link href="/ice-cream">
           <a>Ice Cream</a>
+        </Link>
+        <Link href="/drinks">
+          <a>Drinks</a>
         </Link>
       </nav>
       <div className="nav-border" />
