@@ -5,7 +5,7 @@ import mixins from './mixins';
 import media from './media';
 import theme from './theme';
 
-const { space, color, fonts } = theme;
+const { base, space, color, fonts } = theme;
 
 const GlobalStyle = createGlobalStyle`
   ${Resets};
@@ -32,6 +32,9 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     position: relative;
+    color: ${color.foreground};
+    font-family: ${fonts.font};
+    font-size: ${base.fontBase};
   }
 
   section {
@@ -81,14 +84,14 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foreground};
     margin-bottom: ${space.halfSpace};
     font-size: 2.25em;
-    font-family: ${fonts.subHeading};
+    font-family: ${fonts.font};
   }
 
   h4 {
     color: ${color.foreground};
     margin-bottom: 3rem;
     font-size: 4.5em;
-    font-family: ${fonts.heading};
+    font-family: ${fonts.font};
 
     @media ${media.secondary} {
       font-size: 3em;
@@ -115,18 +118,29 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: ${fonts.font};
     color: ${color.foreground};
-    line-height: 140%;
+    line-height: 110%;
     font-size: 1.25em;
 
     a {
       ${mixins.animate};
       color: ${color.foreground};
-      text-decoration: none;
+      text-decoration: underline;
       cursor: pointer;
 
       &:hover {
         color: ${color.backgroundTert};
       }
+    }
+  }
+
+  a {
+    ${mixins.animate};
+    color: ${color.foreground};
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: ${color.backgroundTert};
     }
   }
 

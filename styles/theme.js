@@ -1,5 +1,10 @@
 const theme = {
 
+  // Base
+  base: {
+    fontBase: '16px',
+  },
+
   // Responsive
   responsive: {
     wrap: 'calc(100% - 10rem)',
@@ -28,11 +33,7 @@ const theme = {
 
   // Fonts
   fonts: {
-    font: 'brandon_grotesqueregular',
-    fontMedium: 'brandon_grotesquemedium',
-    title: 'cartonslab',
-    heading: 'cartonslab',
-    subHeading: 'cartonslab',
+    font: 'cartonslab',
   },
 };
 
