@@ -34,6 +34,7 @@ const theme = {
   // Fonts
   fonts: {
     font: 'cartonslab',
+    fontAlt: 'brandon_grotesquemedium',
   },
 };
 

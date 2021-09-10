@@ -138,6 +138,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${color.foreground};
     text-decoration: none;
     cursor: pointer;
+    font-size: 1.25em;
 
     &:hover {
       color: ${color.backgroundTert};
