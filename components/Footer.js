@@ -28,13 +28,7 @@ const FooterStyles = styled.footer`
       color: ${color.foregroundDim};
       display: flex;
       font-family: ${fonts.fontAlt};
-      padding: 2em 0 0;
-
-      @media ${media.secondary} {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 8em 0 0;
-      }
+      padding: 2em 0 ;
 
       svg {
         width: 5em;
