@@ -10,11 +10,11 @@ const LogoImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 10em;
+  height: 0;
+  padding-top: 75%;
   width: 10em;
 
   @media ${media.secondary} {
-    height: 6em;
     width: 6em;
   }
 `;

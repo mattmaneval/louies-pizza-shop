@@ -38,9 +38,7 @@ function Header() {
           <Logo />
         </div>
         <div className="header-meta">
-          <CallCta />
-          <div>Sun - Thur 11 - 9</div>
-          <div>Fri - Sat 11 - 11</div>
+          <CallCta ctaText="Order Now" />
         </div>
       </div>
     </HeaderStyles>
