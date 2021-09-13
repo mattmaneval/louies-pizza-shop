@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './icons/Logo';
+import CallCta from './navigation/CallCta';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
@@ -14,13 +15,40 @@ const FooterStyles = styled.footer`
       margin-right: 2em;
     }
 
-    &-top,
-    &-bottom {
+    &-top {
       display: flex;
+      justify-content: space-between;
+      margin-bottom: 2em;
     }
 
     &-top {
       align-items: center;
+    }
+
+    &-hours,
+    &-address {
+      margin: 0 2em 2em 0;
+
+      p {
+        @media ${media.secondary} {
+          font-size: 1em;
+        }
+      }
+    }
+
+    &-address {
+      @media ${media.secondary} {
+        margin: 0;
+      }
+    }
+
+    &-contact {
+      display: flex;
+      padding: 2em 0;
+
+      @media ${media.secondary} {
+        flex-direction: column;
+      }
     }
 
     &-bottom {
@@ -29,16 +57,6 @@ const FooterStyles = styled.footer`
       display: flex;
       font-family: ${fonts.fontAlt};
       padding: 2em 0 ;
-
-      svg {
-        width: 5em;
-        height: auto;
-        margin-right: 1.5em;
-
-        @media ${media.secondary} {
-          margin-bottom: 1.5em;
-        }
-      }
     }
   }
 
@@ -62,12 +80,16 @@ const Footer = () => (
         <div className="footer-logo">
           <Logo />
         </div>
-        <div className="footer-contact">
-          <a href="tel:419-237-3737">419-237-3737</a>
-          <div className="address">
-            <p>109 E. Main St.</p>
-            <p>Fayette, Ohio</p>
-          </div>
+        <CallCta ctaText="419-237-3737" />
+      </div>
+      <div className="footer-contact">
+        <div className="footer-hours">
+          <p>Sun - Thur 11 - 9</p>
+          <p>Fri - Sat 11 - 11</p>
+        </div>
+        <div className="footer-address">
+          <p>109 E. Main St.</p>
+          <p>Fayette, Ohio</p>
         </div>
       </div>
       <div className="footer-bottom">

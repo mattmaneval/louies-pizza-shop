@@ -8,7 +8,6 @@ const { color, space } = theme;
 
 const CallCtaStyle = styled.a`
   ${mixins.flexBetween};
-  font-size: 1.5em;
   padding: 1em;
   color: ${color.foreground};
 
@@ -24,10 +23,10 @@ const CallCtaStyle = styled.a`
   }
 `;
 
-const CallCta = () => (
-    <CallCtaStyle href="tel:419-931-0281">
+const CallCta = ({ctaText}) => (
+  <CallCtaStyle href="tel:419-931-0281">
       <Phone />
-      <span>Order Now</span>
+      <span>{ctaText}</span>
     </CallCtaStyle>
 );
 
