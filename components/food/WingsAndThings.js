@@ -9,10 +9,6 @@ const WingsAndThingsStyle = styled.div`
   background: ${color.foregroundTert};
   margin-bottom: ${space.space};
 
-  h4 {
-    color: ${color.foreground};
-  }
-
   .wings-item {
     margin-bottom: ${space.space};
 
