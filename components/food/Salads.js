@@ -5,7 +5,7 @@ import BackButton from '../navigation/BackButton';
 const Salads = () => (
   <section>
     <div className="wrap">
-      <h4>Salads</h4>
+      <h4>salads</h4>
       {Object.keys(saladsData).map((key) => (
         <MenuItem data={saladsData[key]} />
       ))}

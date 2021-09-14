@@ -6,7 +6,7 @@ const { fonts, color, space } = theme;
 
 const OriginalCrustStyle = styled.div`
   text-align: left;
-  color: ${color.foreground};
+  color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
 
   .table-heading {

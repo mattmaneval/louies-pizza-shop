@@ -19,7 +19,7 @@ const SubsDetails = styled.div`
 const Subs = () => (
   <section>
     <div className="wrap">
-      <h4>Gigantic Subs</h4>
+      <h4>subs</h4>
       <SubsDetails>
         <div className="sub-detail">Turn any sub into a calzone - 7.65</div>
         <div className="sub-detail">Make any sub or calzone a basket with fries and slaw - 2.35</div>

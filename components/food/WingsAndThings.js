@@ -6,23 +6,24 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const WingsAndThingsStyle = styled.div`
-  background: ${color.foregroundTert};
+  /* background: ${color.foregroundTert}; */
   margin-bottom: ${space.space};
 
   .wings-item {
     margin-bottom: ${space.space};
 
     &-name {
-      ${mixins.flexBetween};
+      ${mixins.flexBetween}
       margin-bottom: ${space.quarterSpace};
-      color: ${color.background};
+      color: ${color.foregroundAlt};
       font-weight: bold;
       font-size: 1.5em;
-      font-family: ${fonts.heading};
+      font-family: ${fonts.fontAlt};
+      text-transform: uppercase;
     }
 
     &-desc {
-      color: ${color.foreground};
+      color: ${color.foregroundAlt};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       font-family: ${fonts.heading};
@@ -34,7 +35,7 @@ const WingsAndThings = () => (
   <WingsAndThingsStyle>
     <div className="wrap">
       <div className="menu-padding">
-        <h4>Wings & Things</h4>
+        <h4>wings</h4>
         <div>
           <div className="wings-item-desc">Sauces: Bbq, Mild, Hot, Blaze, Butter Garlic, Asian Zing, Park Garlic</div>
         </div>

@@ -5,23 +5,26 @@ import theme from '../../styles/theme';
 const { fonts, space, color } = theme;
 
 const MenuItemStyle = styled.div`
-  font-family: ${fonts.heading};
+  font-family: ${fonts.fontAlt};
   margin-bottom: 3em;
 
   .menu-item {
     &-name {
-      color: ${color.background};
+      color: ${color.foregroundAlt};
       margin-bottom: ${space.quarterSpace};
       font-size: 1.5em;
+      text-transform: uppercase;
     }
 
     &-desc,
     &-options {
-      color: ${color.foreground};
+      color: ${color.foregroundAlt};
+      font-family: ${fonts.font};
     }
 
     &-desc {
-      letter-spacing: 0.025em;
+      /* letter-spacing: 0.025em; */
+      font-family: ${fonts.font};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       line-height: 1.4em;

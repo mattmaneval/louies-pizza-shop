@@ -15,7 +15,7 @@ const BurgerDetails = styled.div`
 const Burgers = () => (
   <section>
     <div className="wrap">
-      <h4>Prime Beef Burgers</h4>
+      <h4>burgers</h4>
       <BurgerDetails>Make any burger a basket with fries and slaw - 2.35</BurgerDetails>
       {Object.keys(burgersData).map((key) => (
         <MenuItem data={burgersData[key]} />
