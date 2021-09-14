@@ -28,7 +28,7 @@ const MenuStyles = styled.section`
 
     &:after {
       content: "";
-      height: 0.5em;
+      height: 0.25em;
       flex: 1 1 0%;
       background-color: currentcolor;
     }
