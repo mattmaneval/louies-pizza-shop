@@ -37,7 +37,11 @@ const FooterStyles = styled.footer`
 
     &-hours,
     &-address  {
-      margin: 0 3em 2em 0;
+      margin: 0 3em 0 0;
+
+      @media ${media.secondary} {
+        margin: 0 3em 2em 0;
+      }
     }
 
     &-hours {
