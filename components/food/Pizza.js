@@ -13,7 +13,7 @@ const Pizza = () => (
       {Object.keys(pizzasData).map((key) => (
         <MenuItem data={pizzasData[key]} />
       ))}
-      <h4>Build Your Own</h4>
+      <h4>build your own</h4>
       <OriginalCrustPrices />
       <ThinAndCrispyPrices />
       <BackButton />

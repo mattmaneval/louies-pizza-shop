@@ -13,6 +13,10 @@ const OriginalCrustStyle = styled.div`
     color: ${color.background};
   }
 
+  .table-price {
+    font-family: ${fonts.fontAlt};
+  }
+
   table {
     margin-bottom: ${space.space};
 
@@ -25,8 +29,8 @@ const OriginalCrustStyle = styled.div`
       padding: ${space.quarterSpace};
 
       svg {
-        width: 1.25em;
-        height: 1.25em;
+        width: 1em;
+        height: 1em;
         fill: ${color.foreground};
       }
     }
@@ -63,27 +67,27 @@ function OriginalCrustPrices() {
         <tbody>
           <tr>
             <td>Small</td>
-            <td>8.25</td>
-            <td>9.30</td>
-            <td>1.25</td>
+            <td className="table-price">8.25</td>
+            <td className="table-price">9.30</td>
+            <td className="table-price">1.25</td>
           </tr>
           <tr>
             <td>Medium</td>
-            <td>11.95</td>
-            <td>13.85</td>
-            <td>2.00</td>
+            <td className="table-price">11.95</td>
+            <td className="table-price">13.85</td>
+            <td className="table-price">2.00</td>
           </tr>
           <tr>
             <td>Large</td>
-            <td>12.65</td>
-            <td>14.95</td>
-            <td>2.30</td>
+            <td className="table-price">12.65</td>
+            <td className="table-price">14.95</td>
+            <td className="table-price">2.30</td>
           </tr>
           <tr>
             <td>Bob</td>
-            <td>22.95</td>
-            <td>26.95</td>
-            <td>3.65</td>
+            <td className="table-price">22.95</td>
+            <td className="table-price">26.95</td>
+            <td className="table-price">3.65</td>
           </tr>
         </tbody>
       </table>

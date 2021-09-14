@@ -7,12 +7,15 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const SubsDetails = styled.div`
-  font-family: ${fonts.heading};
-  color: ${color.foreground};
   margin-bottom: 3em;
 
   .sub-detail {
+    color: ${color.foregroundAlt};
     margin-bottom: ${space.quarterSpace};
+
+    &-price {
+      font-family: ${fonts.fontAlt};
+    }
   }
 `;
 
@@ -21,10 +24,22 @@ const Subs = () => (
     <div className="wrap">
       <h4>subs</h4>
       <SubsDetails>
-        <div className="sub-detail">Turn any sub into a calzone - 7.65</div>
-        <div className="sub-detail">Make any sub or calzone a basket with fries and slaw - 2.35</div>
-        <div className="sub-detail">Extra meat - 1.00</div>
-        <div className="sub-detail">Extra cheese - .50</div>
+        <div className="sub-detail">
+          <span>Turn any sub into a calzone - </span>
+          <span className="sub-detail-price">7.65</span>
+        </div>
+        <div className="sub-detail">
+          <span>Make any sub or calzone a basket with fries and slaw - </span>
+          <span className="sub-detail-price">2.35</span>
+        </div>
+        <div className="sub-detail">
+          <span>Extra meat -</span>
+          <span className="sub-detail-price">1.00</span>
+        </div>
+        <div className="sub-detail">
+          <span>Extra cheese - </span>
+          <span className="sub-detail-price">.50</span>
+        </div>
       </SubsDetails>
       {Object.keys(subsData).map((key) => (
         <MenuItem data={subsData[key]} />

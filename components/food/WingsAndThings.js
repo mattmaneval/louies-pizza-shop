@@ -28,6 +28,10 @@ const WingsAndThingsStyle = styled.div`
       margin-bottom: ${space.halfSpace};
       font-family: ${fonts.heading};
     }
+
+    &-price {
+      font-family: ${fonts.fontAlt};
+    }
   }
 `;
 
@@ -37,20 +41,41 @@ const WingsAndThings = () => (
       <div className="menu-padding">
         <h4>wings</h4>
         <div>
-          <div className="wings-item-desc">Sauces: Bbq, Mild, Hot, Blaze, Butter Garlic, Asian Zing, Park Garlic</div>
+          <div className="wings-item-desc">Sauces: bbq, mild, hot, blaze, butter garlic, asian zing, park garlic</div>
         </div>
         <div className="wings-item">
-          <div className="wings-item-name">Chicken Wings</div>
-          <div className="wings-item-desc">6 - 7.50</div>
-          <div className="wings-item-desc">12 - 14.00</div>
-          <div className="wings-item-desc">18 - 20.50</div>
-          <div className="wings-item-desc">24 - 27.00</div>
-          <div className="wings-item-desc">50 - 50.50</div>
+          <div className="wings-item-name">Traditional</div>
+          <div className="wings-item-desc">
+            <span>6 - </span>
+            <span className="wings-item-price">7.50</span>
+          </div>
+          <div className="wings-item-desc">
+            <span>12 - </span>
+            <span className="wings-item-price">14.00</span>
+          </div>
+          <div className="wings-item-desc">
+            <span>18 - </span>
+            <span className="wings-item-price">20.50</span>
+          </div>
+          <div className="wings-item-desc">
+            <span>24 - </span>
+            <span className="wings-item-price">27.00</span>
+          </div>
+          <div className="wings-item-desc">
+            <span>50 - </span>
+            <span className="wings-item-price">50.50</span>
+          </div>
         </div>
         <div>
-          <div className="wings-item-name">Chicken Chunks</div>
-          <div className="wings-item-desc">1/2 lb - 8.25</div>
-          <div className="wings-item-desc">Add Cheese - 1.00</div>
+          <div className="wings-item-name">Chunks</div>
+          <div className="wings-item-desc">
+            <span>1/2 lb - </span>
+            <span className="wings-item-price">8.25</span>
+          </div>
+          <div className="wings-item-desc">
+            <span>Add cheese - </span>
+            <span className="wings-item-price">1.00</span>
+          </div>
         </div>
       </div>
     </div>

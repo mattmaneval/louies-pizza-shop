@@ -7,6 +7,7 @@ const { fonts, space, color } = theme;
 const MenuItemStyle = styled.div`
   font-family: ${fonts.fontAlt};
   margin-bottom: 3em;
+  max-width: 25em;
 
   .menu-item {
     &-name {
@@ -23,11 +24,18 @@ const MenuItemStyle = styled.div`
     }
 
     &-desc {
-      /* letter-spacing: 0.025em; */
       font-family: ${fonts.font};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       line-height: 1.4em;
+    }
+
+    &-price {
+      font-family: ${fonts.fontAlt};
+    }
+
+    &-price-separator {
+      margin: 0 0.5em;
     }
 
     &-options {
@@ -36,10 +44,11 @@ const MenuItemStyle = styled.div`
 
     &-option {
       font-size: 0.875em;
-      margin-right: ${space.halfSpace};
+      /* margin-right: ${space.halfSpace}; */
+      /* margin: 0 0.5em 0 0; */
 
       span:first-of-type {
-        margin-right: 0.5em;
+        margin: 0 0.5em 0 0;
       }
     }
   }
@@ -57,7 +66,7 @@ const MenuItem = ({ data }) => (
       {data.price.oneSize
         ? (
           <div className="menu-item-option">
-            <span>{data.price.oneSize ? data.price.oneSize : null }</span>
+            <span className="menu-item-price">{data.price.oneSize ? data.price.oneSize : null }</span>
           </div>
         )
         : null }
@@ -65,7 +74,8 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Baby</span>
-            <span>{data.price.baby ? data.price.baby : null }</span>
+            <span className="menu-item-price">{data.price.baby ? data.price.baby : null }</span>
+            <span className="menu-item-price-separator"> | </span>
           </div>
         )
         : null }
@@ -73,7 +83,8 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Sm</span>
-            <span>{data.price.sm ? data.price.sm : null }</span>
+            <span className="menu-item-price">{data.price.sm ? data.price.sm : null }</span>
+            <span className="menu-item-price-separator"> | </span>
           </div>
         )
         : null }
@@ -81,7 +92,8 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Med</span>
-            <span>{data.price.med ? data.price.med : null }</span>
+            <span className="menu-item-price">{data.price.med ? data.price.med : null }</span>
+            <span className="menu-item-price-separator"> | </span>
           </div>
         )
         : null }
@@ -89,7 +101,7 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Lg</span>
-            <span>{data.price.lg ? data.price.lg : null }</span>
+            <span className="menu-item-price">{data.price.lg ? data.price.lg : null }</span>
           </div>
         )
         : null }
@@ -97,7 +109,8 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Single</span>
-            <span>{data.price.sgl ? data.price.sgl : null }</span>
+            <span className="menu-item-price">{data.price.sgl ? data.price.sgl : null }</span>
+            <span className="menu-item-price-separator"> | </span>
           </div>
         )
         : null }
@@ -105,7 +118,7 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Double</span>
-            <span>{data.price.dbl ? data.price.dbl : null }</span>
+            <span className="menu-item-price">{data.price.dbl ? data.price.dbl : null }</span>
           </div>
         )
         : null }
@@ -113,7 +126,7 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Family</span>
-            <span>{data.price.fam ? data.price.fam : null }</span>
+            <span className="menu-item-price">{data.price.fam ? data.price.fam : null }</span>
           </div>
         )
         : null }
@@ -121,7 +134,8 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Half</span>
-            <span>{data.price.half ? data.price.half : null }</span>
+            <span className="menu-item-price">{data.price.half ? data.price.half : null }</span>
+            <span className="menu-item-price-separator"> | </span>
           </div>
         )
         : null }
@@ -129,7 +143,7 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Whole</span>
-            <span>{data.price.whole ? data.price.whole : null }</span>
+            <span className="menu-item-price">{data.price.whole ? data.price.whole : null }</span>
           </div>
         )
         : null }
@@ -137,7 +151,7 @@ const MenuItem = ({ data }) => (
         ? (
           <div className="menu-item-option">
             <span>Bucket</span>
-            <span>{data.price.bucket ? data.price.bucket : null }</span>
+            <span className="menu-item-price">{data.price.bucket ? data.price.bucket : null }</span>
           </div>
         )
         : null }

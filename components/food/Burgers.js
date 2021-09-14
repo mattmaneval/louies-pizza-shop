@@ -7,16 +7,22 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const BurgerDetails = styled.div`
-  font-family: ${fonts.heading};
-  color: ${color.foreground};
   margin-bottom: ${space.space};
+  color: ${color.foregroundAlt};
+
+  .burger-details-price {
+    font-family: ${fonts.fontAlt};
+  }
 `;
 
 const Burgers = () => (
   <section>
     <div className="wrap">
       <h4>burgers</h4>
-      <BurgerDetails>Make any burger a basket with fries and slaw - 2.35</BurgerDetails>
+      <BurgerDetails>
+        <span>Make any burger a basket with fries and slaw - </span>
+        <span className="burger-details-price">2.35</span>
+      </BurgerDetails>
       {Object.keys(burgersData).map((key) => (
         <MenuItem data={burgersData[key]} />
       ))}

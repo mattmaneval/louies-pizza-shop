@@ -36,6 +36,7 @@ const theme = {
   fonts: {
     font: 'poppinsmedium',
     fontAlt: 'poppinsblack',
+    fontBold: 'poppinsbold',
   },
 };
 
