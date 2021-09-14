@@ -30,6 +30,8 @@ const FooterStyles = styled.footer`
       margin: 0 2em 2em 0;
 
       p {
+        color: ${color.foregroundAlt};
+        
         @media ${media.secondary} {
           font-size: 1em;
         }
@@ -53,9 +55,7 @@ const FooterStyles = styled.footer`
 
     &-bottom {
       align-items: center;
-      color: ${color.foregroundDim};
       display: flex;
-      font-family: ${fonts.fontAlt};
       padding: 2em 0 ;
     }
   }
@@ -67,6 +67,7 @@ const FooterStyles = styled.footer`
     a {
       text-decoration: underline;
       color: ${color.foregroundDim};
+      font-size: 1em;
     }
   }
 `;

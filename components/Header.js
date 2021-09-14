@@ -38,7 +38,7 @@ function Header() {
           <Logo />
         </div>
         <div className="header-meta">
-          <CallCta ctaText="Order Now" />
+          <CallCta ctaText="order now" />
         </div>
       </div>
     </HeaderStyles>

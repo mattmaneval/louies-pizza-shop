@@ -4,12 +4,13 @@ import media from '../../styles/media';
 import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
-const { color, space } = theme;
+const { fonts, color, space } = theme;
 
 const CallCtaStyle = styled.a`
   ${mixins.flexBetween};
   padding: 1em;
   color: ${color.foreground};
+  font-family: ${fonts.fontAlt};
 
   @media ${media.secondary} {
     font-size: 1em;

@@ -10,12 +10,17 @@ const MenuStyles = styled.section`
   /* background-color: ${color.foregroundTert}; */
 
   .nav-heading {
-    font-family: ${fonts.heading};
+    font-family: ${fonts.fontAlt};
     color: ${color.foregroundTert};
     display: flex;
     align-items: center;
     margin-bottom: 2em;
+    font-size: 2em;
     /* text-transform: uppercase; */
+
+    @media ${media.secondary} {
+      font-size: 1em;
+    }
 
     span {
       margin-right: 1em;

@@ -7,7 +7,7 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const BurgerDetails = styled.div`
-  margin-bottom: ${space.space};
+  margin-bottom: 3em;
   color: ${color.foregroundAlt};
 
   .burger-details-price {

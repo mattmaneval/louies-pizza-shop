@@ -89,6 +89,7 @@ const GlobalStyle = createGlobalStyle`
 
   h4 {
     color: ${color.foreground};
+    padding-bottom: 0.25em;
     margin-bottom: 3rem;
     font-size: 4.5em;
     font-family: ${fonts.fontAlt};
