@@ -52,7 +52,7 @@ const MenuStyles = styled.section`
 
       &:hover {
         ${mixins.animate}
-        color: ${color.foreground};
+        color: ${color.foregroundTert};
       }
     }
   }

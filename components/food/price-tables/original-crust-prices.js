@@ -10,7 +10,10 @@ const OriginalCrustStyle = styled.div`
   font-family: ${fonts.heading};
 
   .table-heading {
-    color: ${color.background};
+    margin-bottom: ${space.quarterSpace};
+    color: ${color.foregroundAlt};
+    font-family: ${fonts.fontAlt};
+    text-transform: uppercase;
   }
 
   .table-price {
@@ -54,7 +57,7 @@ const OriginalCrustStyle = styled.div`
 function OriginalCrustPrices() {
   return (
     <OriginalCrustStyle>
-      <div className="table-heading">Original Crust</div>
+      <div className="table-heading">original crust</div>
       <table>
         <thead>
           <tr>
@@ -66,19 +69,19 @@ function OriginalCrustPrices() {
         </thead>
         <tbody>
           <tr>
-            <td>Small</td>
+            <td>Sm</td>
             <td className="table-price">8.25</td>
             <td className="table-price">9.30</td>
             <td className="table-price">1.25</td>
           </tr>
           <tr>
-            <td>Medium</td>
+            <td>Med</td>
             <td className="table-price">11.95</td>
             <td className="table-price">13.85</td>
             <td className="table-price">2.00</td>
           </tr>
           <tr>
-            <td>Large</td>
+            <td>Lg</td>
             <td className="table-price">12.65</td>
             <td className="table-price">14.95</td>
             <td className="table-price">2.30</td>

@@ -12,7 +12,9 @@ const SpecialtyPizzaPricesStyle = styled.div`
 
   .table-heading {
     margin-bottom: ${space.quarterSpace};
-    color: ${color.background};
+    color: ${color.foregroundAlt};
+    font-family: ${fonts.fontAlt};
+    text-transform: uppercase;
   }
 
   .table-price {
@@ -28,7 +30,7 @@ const SpecialtyPizzaPricesStyle = styled.div`
 
     th {
       width: 10em;
-      padding: ${space.quarterSpace};
+      padding: ${space.quarterSpace} 0;
 
       svg {
         width: 1em;
@@ -38,7 +40,7 @@ const SpecialtyPizzaPricesStyle = styled.div`
     }
 
     td {
-      padding: ${space.quarterSpace};
+      padding: ${space.quarterSpace} 0;
     }
 
     .gluten-free {
@@ -64,13 +66,13 @@ const glutenFree = 18.84;
 function SpecialtyPizzaPrices() {
   return (
     <SpecialtyPizzaPricesStyle>
-      <div className="table-heading">Original Crust</div>
+      <div className="table-heading">original crust</div>
       <table>
         <thead>
           <tr>
-            <th>Small</th>
-            <th>Medium</th>
-            <th>Large</th>
+            <th>Sm</th>
+            <th>Med</th>
+            <th>Lg</th>
             <th>Bob</th>
           </tr>
         </thead>
@@ -83,7 +85,7 @@ function SpecialtyPizzaPrices() {
           </tr>
         </tbody>
       </table>
-      <div className="table-heading">Thin & Crispy</div>
+      <div className="table-heading">thin & crispy</div>
       <table>
         <thead>
           <tr>

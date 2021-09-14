@@ -7,8 +7,8 @@ import theme from '../../styles/theme';
 const { fonts, color, space } = theme;
 
 const CallCtaStyle = styled.a`
-  ${mixins.flexBetween};
-  padding: 1em;
+  display: flex;
+  align-items: center;
   color: ${color.foreground};
   font-family: ${fonts.fontAlt};
 

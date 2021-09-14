@@ -26,7 +26,7 @@ const MenuItemStyle = styled.div`
     &-desc {
       font-family: ${fonts.font};
       font-size: 1em;
-      margin-bottom: ${space.halfSpace};
+      /* margin-bottom: ${space.halfSpace}; */
       line-height: 1.4em;
     }
 
@@ -40,6 +40,7 @@ const MenuItemStyle = styled.div`
 
     &-options {
       display: flex;
+      margin-top: 0.5em;
     }
 
     &-option {
@@ -50,6 +51,10 @@ const MenuItemStyle = styled.div`
       span:first-of-type {
         margin: 0 0.5em 0 0;
       }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 `;

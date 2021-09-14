@@ -8,7 +8,7 @@ import theme from '../styles/theme';
 const { color, fonts } = theme;
 
 const FooterStyles = styled.footer`
-  padding: 6em 0;
+      padding: 0 0 6em;
 
   .footer {
     &-logo {
@@ -18,7 +18,7 @@ const FooterStyles = styled.footer`
     &-top {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 2em;
+      margin-bottom: 4em;
     }
 
     &-top {
@@ -26,27 +26,37 @@ const FooterStyles = styled.footer`
     }
 
     &-hours,
-    &-address {
-      margin: 0 2em 2em 0;
+    &-address,
+    &-contact {
+      color: ${color.foregroundAlt};
 
-      p {
-        color: ${color.foregroundAlt};
-        
-        @media ${media.secondary} {
-          font-size: 1em;
-        }
+      span {
+        line-height: 1.5em;
       }
     }
 
+    &-hours,
+    &-address  {
+      margin: 0 3em 2em 0;
+    }
+
+    &-hours {
+      width: 8em;
+    }
+
+    &-hours-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &-address {
-      @media ${media.secondary} {
-        margin: 0;
+      span {
+        display: block;
       }
     }
 
     &-contact {
       display: flex;
-      padding: 2em 0;
 
       @media ${media.secondary} {
         flex-direction: column;
@@ -61,13 +71,19 @@ const FooterStyles = styled.footer`
   }
 
   .copyright {
+    color: ${color.foregroundAlt};
     font-size: 0.7em;
     letter-spacing: 0.1em;
+    line-height: 1.5em;
 
     a {
       text-decoration: underline;
       color: ${color.foregroundDim};
       font-size: 1em;
+
+      &:hover {
+        color: ${color.foreground};
+      }
     }
   }
 `;
@@ -81,17 +97,24 @@ const Footer = () => (
         <div className="footer-logo">
           <Logo />
         </div>
-        <CallCta ctaText="419-237-3737" />
+
       </div>
       <div className="footer-contact">
         <div className="footer-hours">
-          <p>Sun - Thur 11 - 9</p>
-          <p>Fri - Sat 11 - 11</p>
+          <div className="footer-hours-row">
+            <span>sun | thur</span>
+            <span>11 | 9</span>
+          </div>
+          <div className="footer-hours-row">
+            <span>fri | sat</span>
+            <span> 11 | 11</span>
+          </div>
         </div>
         <div className="footer-address">
-          <p>109 E. Main St.</p>
-          <p>Fayette, Ohio</p>
+          <span>109 e. main st. </span>
+          <span>fayette, ohio</span>
         </div>
+        <CallCta ctaText="419-237-3737" />
       </div>
       <div className="footer-bottom">
         <div className="copyright">

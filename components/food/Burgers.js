@@ -9,6 +9,7 @@ const { color, fonts, space } = theme;
 const BurgerDetails = styled.div`
   margin-bottom: 3em;
   color: ${color.foregroundAlt};
+  line-height: 1.5em;
 
   .burger-details-price {
     font-family: ${fonts.fontAlt};
