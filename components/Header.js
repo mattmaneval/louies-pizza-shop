@@ -26,6 +26,7 @@ const HeaderStyles = styled.header`
   }
 
   a {
+    padding: 1em;
     transform: translateX(1em);
   }
 `;

@@ -143,7 +143,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.25em;
 
     &:hover {
-      color: ${color.backgroundTert};
+      color: ${color.foregroundTert};
     }
   }
 

@@ -12,6 +12,7 @@ const WingsAndThingsStyle = styled.div`
     &-options {
       margin-bottom: 3em;
       color: ${color.foregroundAlt};
+      line-height: 1.5em;
     }
     &-name {
       ${mixins.flexBetween}

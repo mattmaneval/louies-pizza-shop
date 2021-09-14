@@ -26,7 +26,7 @@ const BackButtonStyle = styled.div`
 
     svg {
       &, use {
-        fill: ${color.foregroundAlt};
+        fill: ${color.foreground};
         height: 5em;
         width: 5em;
       }

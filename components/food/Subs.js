@@ -12,6 +12,7 @@ const SubsDetails = styled.div`
   .sub-detail {
     color: ${color.foregroundAlt};
     margin-bottom: ${space.quarterSpace};
+    line-height: 1.5em;
 
     &-price {
       font-family: ${fonts.fontAlt};

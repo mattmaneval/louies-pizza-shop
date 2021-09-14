@@ -9,10 +9,13 @@ const ThinAndCrispyStyle = styled.div`
   text-align: left;
   color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
+  margin-bottom: 3em;
 
   .table-heading {
     margin-bottom: ${space.quarterSpace};
-    color: ${color.background};
+    color: ${color.foregroundAlt};
+    font-family: ${fonts.fontAlt};
+    text-transform: uppercase;
   }
 
   .table-price {
@@ -68,13 +71,13 @@ function ThinAndCrispyPrices() {
         </thead>
         <tbody>
           <tr>
-            <td>Small</td>
+            <td>Sm</td>
             <td className="table-price">8.25</td>
             <td className="table-price">9.30</td>
             <td className="table-price">1.25</td>
           </tr>
           <tr>
-            <td>Large</td>
+            <td>Lg</td>
             <td className="table-price">11.95</td>
             <td className="table-price">13.85</td>
             <td className="table-price">2.00</td>

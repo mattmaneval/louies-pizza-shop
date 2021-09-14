@@ -28,7 +28,7 @@ const MenuStyles = styled.section`
 
     &:after {
       content: "";
-      height: 0.5em;
+      height: 0.25em;
       flex: 1 1 0%;
       background-color: currentcolor;
     }
@@ -52,7 +52,7 @@ const MenuStyles = styled.section`
 
       &:hover {
         ${mixins.animate}
-        color: ${color.foreground};
+        color: ${color.foregroundTert};
       }
     }
   }
