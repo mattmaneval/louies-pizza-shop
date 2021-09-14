@@ -11,6 +11,7 @@ const BackButtonStyle = styled.div`
   left: 5em;
   bottom: 3em;
   padding: 2rem;
+  z-index: 1;
 
   @media ${media.secondary} {
     left: 0;
@@ -25,7 +26,7 @@ const BackButtonStyle = styled.div`
 
     svg {
       &, use {
-        fill: ${color.background};
+        fill: ${color.foregroundAlt};
         height: 5em;
         width: 5em;
       }

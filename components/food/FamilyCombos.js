@@ -5,7 +5,7 @@ import BackButton from '../navigation/BackButton';
 const FamilyCombos = () => (
   <section>
     <div className="wrap">
-      <h4>Family Combos</h4>
+      <h4>family combos</h4>
       {Object.keys(familyCombosData).map((key) => (
         <MenuItem data={familyCombosData[key]} />
       ))}

@@ -25,7 +25,8 @@ const theme = {
     backgroundAlt: '#000000',
     backgroundTert: '#513c97',
     foreground: '#d51f26',
-    foregroundAlt: '#262262',
+    foregroundAlt: '#313131',
+    // foregroundAlt: '#ffffff',
     foregroundTert: '#f3bb2c',
     callout: '#3b5998',
     foregroundDim: '#a3a3a3',
@@ -33,8 +34,9 @@ const theme = {
 
   // Fonts
   fonts: {
-    font: 'cartonslab',
-    fontAlt: 'brandon_grotesquemedium',
+    font: 'poppinsmedium',
+    fontAlt: 'poppinsblack',
+    fontBold: 'poppinsbold',
   },
 };
 

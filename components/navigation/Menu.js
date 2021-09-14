@@ -7,15 +7,20 @@ import theme from '../../styles/theme';
 const { color, fonts, space } = theme;
 
 const MenuStyles = styled.section`
-  background-color: ${color.foregroundTert};
+  /* background-color: ${color.foregroundTert}; */
 
   .nav-heading {
-    font-family: ${fonts.heading};
-    color: ${color.background};
+    font-family: ${fonts.fontAlt};
+    color: ${color.foregroundTert};
     display: flex;
     align-items: center;
     margin-bottom: 2em;
-    text-transform: uppercase;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+
+    @media ${media.secondary} {
+      font-size: 1em;
+    }
 
     span {
       margin-right: 1em;
@@ -23,7 +28,7 @@ const MenuStyles = styled.section`
 
     &:after {
       content: "";
-      height: 1px;
+      height: 0.5em;
       flex: 1 1 0%;
       background-color: currentcolor;
     }
@@ -34,11 +39,11 @@ const MenuStyles = styled.section`
     margin-bottom: ${space.halfSpace};
 
     a {
-      color: ${color.background};
+      color: ${color.foreground};
       display: block;
       padding-bottom: 1rem;
       font-size: 5.5em;
-      font-family: ${fonts.heading};
+      font-family: ${fonts.fontAlt};
       /* -webkit-text-stroke: 2px ${color.backgroundTert}; */
 
       @media ${media.secondary} {
@@ -53,7 +58,7 @@ const MenuStyles = styled.section`
   }
 
   .nav-border {
-    border-bottom: 1px solid ${color.background};
+    border-bottom: .5em solid ${color.foregroundTert};
   }
 `;
 
@@ -61,38 +66,38 @@ const Menu = () => (
   <MenuStyles>
     <div className="wrap">
       <div className="nav-heading">
-        <span>Online Menu</span>
+        <span>online menu</span>
       </div>
       <nav className="mobile-nav">
         <Link href="/pizza">
-          <a>Pizza</a>
+          <a>pizza</a>
         </Link>
         <Link href="/subs">
-          <a>Subs</a>
+          <a>subs</a>
         </Link>
         <Link href="/wings-and-things">
-          <a>Wings</a>
+          <a>wings</a>
         </Link>
         <Link href="/burgers">
-          <a>Burgers</a>
+          <a>burgers</a>
         </Link>
         <Link href="/family-combos">
-          <a>Family Combos</a>
+          <a>family combos</a>
         </Link>
         <Link href="/sides">
-          <a>Sides</a>
+          <a>sides</a>
         </Link>
         <Link href="/pasta">
-          <a>Pasta</a>
+          <a>pasta</a>
         </Link>
         <Link href="/salads">
-          <a>Salads</a>
+          <a>salads</a>
         </Link>
         <Link href="/ice-cream">
-          <a>Ice Cream</a>
+          <a>ice cream</a>
         </Link>
         <Link href="/drinks">
-          <a>Drinks</a>
+          <a>drinks</a>
         </Link>
       </nav>
       <div className="nav-border" />

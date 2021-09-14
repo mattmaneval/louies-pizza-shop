@@ -7,12 +7,16 @@ const { fonts, color, space } = theme;
 
 const SpecialtyPizzaPricesStyle = styled.div`
   text-align: left;
-  color: ${color.foreground};
+  color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
 
   .table-heading {
     margin-bottom: ${space.quarterSpace};
     color: ${color.background};
+  }
+
+  .table-price {
+    font-family: ${fonts.fontAlt};
   }
 
   table {
@@ -27,7 +31,7 @@ const SpecialtyPizzaPricesStyle = styled.div`
       padding: ${space.quarterSpace};
 
       svg {
-        width: 1.25em;
+        width: 1em;
         height: 1.25em;
         fill: ${color.foreground};
       }
@@ -72,10 +76,10 @@ function SpecialtyPizzaPrices() {
         </thead>
         <tbody>
           <tr>
-            <td>{sm}</td>
-            <td>{med}</td>
-            <td>{lg}</td>
-            <td>{bob}</td>
+            <td className="table-price">{sm}</td>
+            <td className="table-price">{med}</td>
+            <td className="table-price">{lg}</td>
+            <td className="table-price">{bob}</td>
           </tr>
         </tbody>
       </table>
@@ -93,9 +97,9 @@ function SpecialtyPizzaPrices() {
         </thead>
         <tbody>
           <tr>
-            <td>{smThin}</td>
-            <td>{lgThin}</td>
-            <td>{glutenFree}</td>
+            <td className="table-price">{smThin}</td>
+            <td className="table-price">{lgThin}</td>
+            <td className="table-price">{glutenFree}</td>
           </tr>
         </tbody>
       </table>

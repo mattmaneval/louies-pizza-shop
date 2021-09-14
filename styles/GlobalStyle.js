@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     color: ${color.foreground};
     font-family: ${fonts.font};
-    font-size: ${base.fontBase};
+    // font-size: ${base.fontBase};
   }
 
   section {
@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
     clear: both;
     float: none;
     width: 100%;
-    background-color: ${color.foregroundTert};
+    // background-color: ${color.foregroundTert};
 
     @media ${media.secondary} {
       padding: 3em 0;
@@ -88,10 +88,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-    color: ${color.background};
+    color: ${color.foreground};
+    padding-bottom: 0.25em;
     margin-bottom: 3rem;
     font-size: 4.5em;
-    font-family: ${fonts.font};
+    font-family: ${fonts.fontAlt};
+    border-bottom: 0.15em solid ${color.foregroundTert};
 
     @media ${media.secondary} {
       font-size: 3em;

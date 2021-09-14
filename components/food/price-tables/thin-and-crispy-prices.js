@@ -7,12 +7,16 @@ const { fonts, color, space } = theme;
 
 const ThinAndCrispyStyle = styled.div`
   text-align: left;
-  color: ${color.foreground};
+  color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
 
   .table-heading {
     margin-bottom: ${space.quarterSpace};
     color: ${color.background};
+  }
+
+  .table-price {
+    font-family: ${fonts.fontAlt};
   }
 
   table {
@@ -31,8 +35,8 @@ const ThinAndCrispyStyle = styled.div`
       padding: ${space.quarterSpace};
 
       svg {
-        width: 1.25em;
-        height: 1.25em;
+        width: 1em;
+        height: 1em;
         fill: ${color.foreground};
       }
     }
@@ -65,24 +69,24 @@ function ThinAndCrispyPrices() {
         <tbody>
           <tr>
             <td>Small</td>
-            <td>8.25</td>
-            <td>9.30</td>
-            <td>1.25</td>
+            <td className="table-price">8.25</td>
+            <td className="table-price">9.30</td>
+            <td className="table-price">1.25</td>
           </tr>
           <tr>
             <td>Large</td>
-            <td>11.95</td>
-            <td>13.85</td>
-            <td>2.00</td>
+            <td className="table-price">11.95</td>
+            <td className="table-price">13.85</td>
+            <td className="table-price">2.00</td>
           </tr>
           <tr>
             <td colSpan="2" className="gluten-free">
               <span>Sm</span>
               <GlutenFree />
             </td>
-            <td>12.24</td>
-            <td>13.29</td>
-            <td>1.25</td>
+            <td className="table-price">12.24</td>
+            <td className="table-price">13.29</td>
+            <td className="table-price">1.25</td>
           </tr>
         </tbody>
       </table>
