@@ -8,6 +8,7 @@ const OriginalCrustStyle = styled.div`
   text-align: left;
   color: ${color.foregroundAlt};
   font-family: ${fonts.heading};
+  margin-bottom: 3em;
 
   .table-heading {
     margin-bottom: ${space.quarterSpace};
