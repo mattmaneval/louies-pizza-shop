@@ -25,7 +25,7 @@ const CallCtaStyle = styled.a`
 `;
 
 const CallCta = ({ctaText}) => (
-  <CallCtaStyle href="tel:419-931-0281">
+  <CallCtaStyle href="tel:419-237-3737">
     <Phone />
     <span>{ctaText}</span>
   </CallCtaStyle>
