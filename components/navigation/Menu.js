@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import mixins from '../../styles/mixins';
+import ArrowUpRight from '../icons/ArrowUpRight';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color, fonts } = theme;
 
 const MenuStyles = styled.section`
-  /* background-color: ${color.foregroundTert}; */
-
   .nav-heading {
     font-family: ${fonts.fontAlt};
     color: ${color.foregroundTert};
@@ -16,7 +14,6 @@ const MenuStyles = styled.section`
     align-items: center;
     margin-bottom: 2em;
     font-size: 2em;
-    /* text-transform: uppercase; */
 
     @media ${media.secondary} {
       font-size: 1em;
@@ -28,37 +25,20 @@ const MenuStyles = styled.section`
 
     &:after {
       content: "";
-      height: 0.25em;
+      height: 8px;
       flex: 1 1 0%;
       background-color: currentcolor;
     }
   }
 
-  .mobile-nav {
-    display: inline-block;
-    margin-bottom: ${space.halfSpace};
-
+  nav {
     a {
-      color: ${color.foreground};
-      display: block;
-      padding-bottom: 1rem;
       font-size: 5.5em;
-      font-family: ${fonts.fontAlt};
-      /* -webkit-text-stroke: 2px ${color.backgroundTert}; */
 
       @media ${media.secondary} {
-        font-size: 2.5em;
-      }
-
-      &:hover {
-        ${mixins.animate}
-        color: ${color.foregroundTert};
+        font-size: 3em;
       }
     }
-  }
-
-  .nav-border {
-    border-bottom: .5em solid ${color.foregroundTert};
   }
 `;
 
@@ -68,7 +48,7 @@ const Menu = () => (
       <div className="nav-heading">
         <span>online menu</span>
       </div>
-      <nav className="mobile-nav">
+      <nav>
         <Link href="/pizza">
           <a>pizza</a>
         </Link>
@@ -100,7 +80,6 @@ const Menu = () => (
           <a>drinks</a>
         </Link>
       </nav>
-      <div className="nav-border" />
     </div>
   </MenuStyles>
 );

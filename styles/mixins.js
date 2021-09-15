@@ -52,6 +52,11 @@ const mixins = {
     box-shadow: 1em 1em 4em -2em ${color.foreground};
   `,
 
+  // Border
+  border: css`
+    border-top: 8px solid ${color.foregroundTert};
+  `,
+
   // Animate
   animate: css`
     transition: 0.2s all ease-in-out;

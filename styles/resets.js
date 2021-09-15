@@ -26,7 +26,7 @@ const Resets = css`
   text-decoration: none;
   box-sizing: border-box;
   font-weight: lighter;
-  line-height: 1;
+  /* line-height: 1; */
   list-style-image: none;
   list-style-type: none;
   outline: 0;

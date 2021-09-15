@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './icons/Logo';
 import CallCta from './navigation/CallCta';
 import media from '../styles/media';
 import theme from '../styles/theme';
@@ -8,28 +7,17 @@ import theme from '../styles/theme';
 const { color, fonts } = theme;
 
 const FooterStyles = styled.footer`
-      padding: 0 0 6em;
+  padding: 0 0 6em 0;
+
+  h1 {
+    /* border: none; */
+  }
 
   .footer {
-    &-logo {
-      margin-right: 2em;
-    }
-
-    &-top {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 4em;
-    }
-
-    &-top {
-      align-items: center;
-    }
-
     &-hours,
     &-address,
     &-contact {
-      color: ${color.foregroundAlt};
-
+      font-family: ${fonts.fontAlt};
       span {
         line-height: 1.5em;
       }
@@ -45,7 +33,7 @@ const FooterStyles = styled.footer`
     }
 
     &-hours {
-      width: 8em;
+      max-width: 16em;
     }
 
     &-hours-row {
@@ -61,6 +49,8 @@ const FooterStyles = styled.footer`
 
     &-contact {
       display: flex;
+      font-size: 1.25em;
+      margin-bottom: 4em;
 
       @media ${media.secondary} {
         flex-direction: column;
@@ -70,19 +60,19 @@ const FooterStyles = styled.footer`
     &-bottom {
       align-items: center;
       display: flex;
-      padding: 2em 0 ;
+      font-size: 1.3em;
     }
   }
 
   .copyright {
-    color: ${color.foregroundAlt};
-    font-size: 0.7em;
+    font-size: 0.45em;
     letter-spacing: 0.1em;
     line-height: 1.5em;
 
     a {
       text-decoration: underline;
       color: ${color.foregroundDim};
+      font-family: ${fonts.font};
       font-size: 1em;
 
       &:hover {
@@ -97,20 +87,15 @@ const year = new Date().getFullYear();
 const Footer = () => (
   <FooterStyles>
     <div className="wrap">
-      <div className="footer-top">
-        <div className="footer-logo">
-          <Logo />
-        </div>
-
-      </div>
+      <h1>louie&apos;s pizza shop</h1>
       <div className="footer-contact">
         <div className="footer-hours">
           <div className="footer-hours-row">
-            <span>sun | thur</span>
-            <span>11 | 9</span>
+            <span>sunday | thursday</span>
+            <span>11  |  9</span>
           </div>
           <div className="footer-hours-row">
-            <span>fri | sat</span>
+            <span>friday | saturday</span>
             <span> 11 | 11</span>
           </div>
         </div>
@@ -126,7 +111,7 @@ const Footer = () => (
           {' '}
           {year}
           {' '}
-          Louie's Pizza Shop. All Rights Reserved. Site by
+          Louie&apos;s Pizza Shop. All Rights Reserved. Site by
           {' '}
           <a rel="noreferrer" target="_blank" href="https://mattmaneval.com/">Matt Maneval</a>
         </div>

@@ -1,24 +1,24 @@
 import styled from 'styled-components';
+// import PropTypes from 'prop-types';
 import Phone from '../icons/Phone';
 import media from '../../styles/media';
-import mixins from '../../styles/mixins';
 import theme from '../../styles/theme';
 
-const { fonts, color, space } = theme;
+const { color, space } = theme;
 
 const CallCtaStyle = styled.a`
   display: flex;
   align-items: center;
   color: ${color.foreground};
-  font-family: ${fonts.fontAlt};
+  font-size: 1.85em;
 
   @media ${media.secondary} {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   svg {
-    width: 1em;
-    height: 1em;
+    width: 1.25em;
+    height: 1.25em;
     fill: ${color.foreground};
     margin-right: ${space.quarterSpace};
   }
@@ -26,9 +26,9 @@ const CallCtaStyle = styled.a`
 
 const CallCta = ({ctaText}) => (
   <CallCtaStyle href="tel:419-931-0281">
-      <Phone />
-      <span>{ctaText}</span>
-    </CallCtaStyle>
+    <Phone />
+    <span>{ctaText}</span>
+  </CallCtaStyle>
 );
 
 export default CallCta;

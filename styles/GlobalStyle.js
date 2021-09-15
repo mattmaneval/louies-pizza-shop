@@ -5,7 +5,7 @@ import mixins from './mixins';
 import media from './media';
 import theme from './theme';
 
-const { base, space, color, fonts } = theme;
+const { space, color, fonts } = theme;
 
 const GlobalStyle = createGlobalStyle`
   ${Resets};
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     color: ${color.foreground};
     font-family: ${fonts.font};
-    // font-size: ${base.fontBase};
+    line-height: 1.4;
   }
 
   section {
@@ -44,7 +44,6 @@ const GlobalStyle = createGlobalStyle`
     clear: both;
     float: none;
     width: 100%;
-    // background-color: ${color.foregroundTert};
 
     @media ${media.secondary} {
       padding: 3em 0;
@@ -52,48 +51,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-family: ${fonts.title};
-    font-size: 7em;
-    color: ${color.foreground};
-    margin-bottom: ${space.space};
-    line-height: 85%;
-
-    @media ${media.primary} {
-      font-size: 4em;
-    }
-
-    @media ${media.secondary} {
-      font-size: 4em;
-    }
-  }
-
-  h2 {
-    display: inline-block;
-    color: ${color.foreground};
-    font-family: ${fonts.title};
-    font-size: 3.65em;
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-
-    @media ${media.secondary} {
-      font-size: 2.25em;
-    }
-  }
-
-  h3 {
-    color: ${color.foreground};
-    margin-bottom: ${space.halfSpace};
-    font-size: 2.25em;
-    font-family: ${fonts.font};
-  }
-
-  h4 {
-    color: ${color.foreground};
-    padding-bottom: 0.25em;
-    margin-bottom: 3rem;
+    ${mixins.border};
+    color: ${color.foregroundAlt};
+    padding-top: calc(0.65em - 8px);
+    margin-bottom: 0.65em;
     font-size: 4.5em;
     font-family: ${fonts.fontAlt};
-    border-bottom: 0.15em solid ${color.foregroundTert};
+    line-height: 1.2;
 
     @media ${media.secondary} {
       font-size: 3em;
@@ -104,46 +68,45 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h5 {
-    display: block;
+  a {
     color: ${color.foreground};
-    font-family: ${fonts.title};
-    font-size: 1.65em;
-    margin-bottom: ${space.space};
-    text-transform: uppercase;
+    display: block;
+    font-family: ${fonts.fontAlt};
+    font-size: 1.25em;
+    line-height: 1;
+    padding: 0.1em 0;
 
     @media ${media.secondary} {
-      font-size: 2.25em;
+      font-size: 2.5em;
     }
-  }
-
-  p {
-    font-family: ${fonts.font};
-    color: ${color.foreground};
-    line-height: 110%;
-    font-size: 1.25em;
-
-    a {
-      ${mixins.animate};
-      color: ${color.foreground};
-      text-decoration: underline;
-      cursor: pointer;
-
-      &:hover {
-        color: ${color.backgroundTert};
-      }
-    }
-  }
-
-  a {
-    ${mixins.animate};
-    color: ${color.foreground};
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.25em;
 
     &:hover {
+      ${mixins.animate}
       color: ${color.foregroundTert};
+    }
+  }
+
+  table {
+    text-align: left;
+    margin-bottom: 3em;
+
+    @media ${media.secondary} {
+      width: 100%;
+    }
+
+    th, td {
+      padding: ${space.quarterSpace} 0;
+
+      svg {
+        width: 1em;
+        height: 1em;
+        fill: ${color.foreground};
+      }
+    }
+
+    th {
+      width: 10em;
+
     }
   }
 
@@ -151,12 +114,33 @@ const GlobalStyle = createGlobalStyle`
     ${mixins.wrap}
   }
 
-  .collapsed {
-    display: none;
+  .title {
+    font-family: ${fonts.fontAlt};
+    margin-bottom: ${space.quarterSpace};
+    font-size: 1.5em;
+    text-transform: uppercase;
   }
 
-  .menu-padding {
-    padding: 2em 0;
+  .title-alt {
+    font-family: ${fonts.fontAlt};
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  .font-bold {
+    font-family: ${fonts.fontAlt};
+    text-transform: uppercase;
+  }
+
+  .gluten-free {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      margin-right: 0.4em;
+    }
   }
 `;
 
