@@ -1,6 +1,6 @@
 const OriginalCrustPrices = () => (
   <>
-    <div className="font-bold">original crust</div>
+    <div className="title-alt">original crust</div>
     <table>
       <thead>
         <tr>

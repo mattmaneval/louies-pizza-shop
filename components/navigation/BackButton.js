@@ -26,9 +26,14 @@ const BackButtonStyle = styled.div`
 
     svg {
       &, use {
-        fill: ${color.foreground};
-        height: 5em;
-        width: 5em;
+        fill: ${color.foregroundTert};
+        height: 3em;
+        width: 3em;
+
+        @media ${media.secondary} {
+          height: 2em;
+          width: 2em;
+        }
       }
     }
   }

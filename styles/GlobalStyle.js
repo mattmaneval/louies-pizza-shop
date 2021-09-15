@@ -32,8 +32,9 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     position: relative;
-    color: ${color.foregroundAlt};
+    color: ${color.foreground};
     font-family: ${fonts.font};
+    line-height: 1.4;
   }
 
   section {
@@ -51,12 +52,12 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${mixins.border};
-    color: ${color.foreground};
+    color: ${color.foregroundAlt};
     padding-bottom: 0.25em;
     margin-bottom: 1em;
     font-size: 4.5em;
     font-family: ${fonts.fontAlt};
-
+    line-height: 1.2;
 
     @media ${media.secondary} {
       font-size: 3em;
@@ -67,27 +68,20 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  p {
-    a {
-      ${mixins.animate};
-      color: ${color.foreground};
-      text-decoration: underline;
-      cursor: pointer;
-
-      &:hover {
-        color: ${color.backgroundTert};
-      }
-    }
-  }
-
   a {
-    ${mixins.animate};
     color: ${color.foreground};
-    text-decoration: none;
-    cursor: pointer;
+    display: block;
+    font-family: ${fonts.fontAlt};
     font-size: 1.25em;
+    line-height: 1;
+    padding: 0.1em 0;
+
+    @media ${media.secondary} {
+      font-size: 2.5em;
+    }
 
     &:hover {
+      ${mixins.animate}
       color: ${color.foregroundTert};
     }
   }
@@ -101,6 +95,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     th, td {
+      padding: ${space.quarterSpace} 0;
+
       svg {
         width: 1em;
         height: 1em;
@@ -110,11 +106,7 @@ const GlobalStyle = createGlobalStyle`
 
     th {
       width: 10em;
-      padding: ${space.quarterSpace};
-    }
 
-    td {
-      padding: ${space.quarterSpace};
     }
   }
 
@@ -123,8 +115,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .title {
+    font-family: ${fonts.fontAlt};
     margin-bottom: ${space.quarterSpace};
     font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .title-alt {
+    font-family: ${fonts.fontAlt};
+    font-size: 1em;
+    margin-bottom: 1em;
     text-transform: uppercase;
   }
 

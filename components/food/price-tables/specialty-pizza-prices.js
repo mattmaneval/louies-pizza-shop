@@ -10,7 +10,7 @@ const glutenFree = 18.84;
 
 const SpecialtyPizzaPrices = () => (
   <>
-    <div className="font-bold">original crust</div>
+    <div className="title-alt">original crust</div>
     <table>
       <thead>
         <tr>
@@ -29,7 +29,7 @@ const SpecialtyPizzaPrices = () => (
         </tr>
       </tbody>
     </table>
-    <div className="font-bold">thin & crispy</div>
+    <div className="title-alt">thin & crispy</div>
     <table>
       <thead>
         <tr>

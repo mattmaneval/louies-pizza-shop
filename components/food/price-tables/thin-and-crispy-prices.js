@@ -2,7 +2,7 @@ import GlutenFree from '../../icons/Gluten-free';
 
 const ThinAndCrispyPrices = () => (
   <>
-    <div className="font-bold">Thin & Crispy</div>
+    <div className="title-alt">Thin & Crispy</div>
     <table>
       <thead>
         <tr>

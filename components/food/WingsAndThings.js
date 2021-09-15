@@ -11,9 +11,10 @@ const WingsAndThingsStyle = styled.div`
 
     &-options {
       margin-bottom: 3em;
-      color: ${color.foregroundAlt};
+
       line-height: 1.5em;
     }
+
     &-name {
       ${mixins.flexBetween}
       margin-bottom: ${space.quarterSpace};
@@ -25,7 +26,6 @@ const WingsAndThingsStyle = styled.div`
     }
 
     &-desc {
-      color: ${color.foregroundAlt};
       font-size: 1em;
       margin-bottom: ${space.halfSpace};
       font-family: ${fonts.heading};
@@ -41,39 +41,39 @@ const WingsAndThings = () => (
   <WingsAndThingsStyle>
     <div className="wrap">
       <h1>wings</h1>
-      <div className="wings-item-options">Sauces: bbq, mild, hot, blaze, butter garlic, asian zing, park garlic</div>
+      <div className="wings-item-options">Sauces: bbq | mild | hot | blaze | butter garlic | asian zing | park garlic</div>
       <div className="wings-item">
-        <div className="wings-item-name">Traditional</div>
+        <div className="title">Traditional</div>
         <div className="wings-item-desc">
-          <span>6 - </span>
-          <span className="wings-item-price">7.50</span>
+          <span>6 | </span>
+          <span className="font-bold">7.50</span>
         </div>
         <div className="wings-item-desc">
-          <span>12 - </span>
-          <span className="wings-item-price">14.00</span>
+          <span>12 | </span>
+          <span className="font-bold">14.00</span>
         </div>
         <div className="wings-item-desc">
-          <span>18 - </span>
-          <span className="wings-item-price">20.50</span>
+          <span>18 | </span>
+          <span className="font-bold">20.50</span>
         </div>
         <div className="wings-item-desc">
-          <span>24 - </span>
-          <span className="wings-item-price">27.00</span>
+          <span>24 | </span>
+          <span className="font-bold">27.00</span>
         </div>
         <div className="wings-item-desc">
-          <span>50 - </span>
-          <span className="wings-item-price">50.50</span>
+          <span>50 | </span>
+          <span className="font-bold">50.50</span>
         </div>
       </div>
       <div className="wings-item">
-        <div className="wings-item-name">Chunks</div>
+        <div className="title">Chunks</div>
         <div className="wings-item-desc">
-          <span>1/2 lb - </span>
-          <span className="wings-item-price">8.25</span>
+          <span>1/2 lb | </span>
+          <span className="font-bold">8.25</span>
         </div>
         <div className="wings-item-desc">
-          <span>Add cheese - </span>
-          <span className="wings-item-price">1.00</span>
+          <span>Add cheese | </span>
+          <span className="font-bold">1.00</span>
         </div>
       </div>
     </div>
