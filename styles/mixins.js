@@ -54,7 +54,7 @@ const mixins = {
 
   // Border
   border: css`
-    border-bottom: 8px solid ${color.foregroundTert};
+    border-top: 8px solid ${color.foregroundTert};
   `,
 
   // Animate

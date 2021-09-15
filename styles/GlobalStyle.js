@@ -53,8 +53,8 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     ${mixins.border};
     color: ${color.foregroundAlt};
-    padding-bottom: 0.25em;
-    margin-bottom: 1em;
+    padding-top: calc(0.65em - 8px);
+    margin-bottom: 0.65em;
     font-size: 4.5em;
     font-family: ${fonts.fontAlt};
     line-height: 1.2;

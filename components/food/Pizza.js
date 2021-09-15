@@ -8,7 +8,7 @@ import BackButton from '../navigation/BackButton';
 const Pizza = () => (
   <section>
     <div className="wrap">
-      <h1>specialty pizza</h1>
+      <h1>specialty pizzas</h1>
       <SpecialtyPizzaPrices />
       {Object.keys(pizzasData).map((key) => (
         <MenuItem data={pizzasData[key]} />

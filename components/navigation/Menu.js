@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import mixins from '../../styles/mixins';
+import ArrowUpRight from '../icons/ArrowUpRight';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
@@ -32,8 +32,6 @@ const MenuStyles = styled.section`
   }
 
   nav {
-    margin-bottom: 2em;
-
     a {
       font-size: 5.5em;
 
@@ -41,10 +39,6 @@ const MenuStyles = styled.section`
         font-size: 3em;
       }
     }
-  }
-
-  .nav-border {
-    ${mixins.border};
   }
 `;
 
@@ -86,7 +80,6 @@ const Menu = () => (
           <a>drinks</a>
         </Link>
       </nav>
-      <div className="nav-border" />
     </div>
   </MenuStyles>
 );

@@ -10,7 +10,7 @@ const FooterStyles = styled.footer`
   padding: 0 0 6em 0;
 
   h1 {
-    border: none;
+    /* border: none; */
   }
 
   .footer {
@@ -33,7 +33,7 @@ const FooterStyles = styled.footer`
     }
 
     &-hours {
-      width: 8em;
+      max-width: 16em;
     }
 
     &-hours-row {
@@ -49,6 +49,7 @@ const FooterStyles = styled.footer`
 
     &-contact {
       display: flex;
+      font-size: 1.25em;
       margin-bottom: 4em;
 
       @media ${media.secondary} {
@@ -59,11 +60,12 @@ const FooterStyles = styled.footer`
     &-bottom {
       align-items: center;
       display: flex;
+      font-size: 1.3em;
     }
   }
 
   .copyright {
-    font-size: 0.7em;
+    font-size: 0.45em;
     letter-spacing: 0.1em;
     line-height: 1.5em;
 
@@ -89,11 +91,11 @@ const Footer = () => (
       <div className="footer-contact">
         <div className="footer-hours">
           <div className="footer-hours-row">
-            <span>sun | thur</span>
-            <span>11 | 9</span>
+            <span>sunday | thursday</span>
+            <span>11  |  9</span>
           </div>
           <div className="footer-hours-row">
-            <span>fri | sat</span>
+            <span>friday | saturday</span>
             <span> 11 | 11</span>
           </div>
         </div>
