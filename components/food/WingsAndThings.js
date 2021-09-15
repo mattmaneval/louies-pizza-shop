@@ -40,7 +40,7 @@ const WingsAndThingsStyle = styled.div`
 const WingsAndThings = () => (
   <WingsAndThingsStyle>
     <div className="wrap">
-      <h4>wings</h4>
+      <h1>wings</h1>
       <div className="wings-item-options">Sauces: bbq, mild, hot, blaze, butter garlic, asian zing, park garlic</div>
       <div className="wings-item">
         <div className="wings-item-name">Traditional</div>

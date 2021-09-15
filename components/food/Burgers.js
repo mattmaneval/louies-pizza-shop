@@ -19,7 +19,7 @@ const BurgerDetails = styled.div`
 const Burgers = () => (
   <section>
     <div className="wrap">
-      <h4>burgers</h4>
+      <h1>burgers</h1>
       <BurgerDetails>
         <span>Make any burger a basket with fries and slaw - </span>
         <span className="burger-details-price">2.35</span>

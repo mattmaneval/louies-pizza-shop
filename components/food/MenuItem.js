@@ -10,13 +10,6 @@ const MenuItemStyle = styled.div`
   max-width: 25em;
 
   .menu-item {
-    &-name {
-      color: ${color.foregroundAlt};
-      margin-bottom: ${space.quarterSpace};
-      font-size: 1.5em;
-      text-transform: uppercase;
-    }
-
     &-desc,
     &-options {
       color: ${color.foregroundAlt};
@@ -61,7 +54,7 @@ const MenuItemStyle = styled.div`
 
 const MenuItem = ({ data }) => (
   <MenuItemStyle>
-    <div className="menu-item-name">{data.name}</div>
+    <div className="title">{data.name}</div>
     {data.desc
       ? (
         <div className="menu-item-desc">{data.desc ? data.desc : null }</div>

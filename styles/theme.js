@@ -27,7 +27,6 @@ const theme = {
     backgroundTert: '#513c97',
     foreground: '#d51f26',
     foregroundAlt: '#313131',
-    // foregroundAlt: '#ffffff',
     foregroundTert: '#f3bb2c',
     callout: '#3b5998',
     foregroundDim: '#a3a3a3',

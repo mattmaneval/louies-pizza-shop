@@ -5,7 +5,7 @@ import mixins from './mixins';
 import media from './media';
 import theme from './theme';
 
-const { base, space, color, fonts } = theme;
+const { space, color, fonts } = theme;
 
 const GlobalStyle = createGlobalStyle`
   ${Resets};
@@ -32,9 +32,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     position: relative;
-    color: ${color.foreground};
+    color: ${color.foregroundAlt};
     font-family: ${fonts.font};
-    // font-size: ${base.fontBase};
   }
 
   section {
@@ -44,7 +43,6 @@ const GlobalStyle = createGlobalStyle`
     clear: both;
     float: none;
     width: 100%;
-    // background-color: ${color.foregroundTert};
 
     @media ${media.secondary} {
       padding: 3em 0;
@@ -52,48 +50,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-family: ${fonts.title};
-    font-size: 7em;
-    color: ${color.foreground};
-    margin-bottom: ${space.space};
-    line-height: 85%;
-
-    @media ${media.primary} {
-      font-size: 4em;
-    }
-
-    @media ${media.secondary} {
-      font-size: 4em;
-    }
-  }
-
-  h2 {
-    display: inline-block;
-    color: ${color.foreground};
-    font-family: ${fonts.title};
-    font-size: 3.65em;
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-
-    @media ${media.secondary} {
-      font-size: 2.25em;
-    }
-  }
-
-  h3 {
-    color: ${color.foreground};
-    margin-bottom: ${space.halfSpace};
-    font-size: 2.25em;
-    font-family: ${fonts.font};
-  }
-
-  h4 {
+    ${mixins.border};
     color: ${color.foreground};
     padding-bottom: 0.25em;
-    margin-bottom: 3rem;
+    margin-bottom: 1em;
     font-size: 4.5em;
     font-family: ${fonts.fontAlt};
-    border-bottom: 0.15em solid ${color.foregroundTert};
+
 
     @media ${media.secondary} {
       font-size: 3em;
@@ -104,25 +67,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h5 {
-    display: block;
-    color: ${color.foreground};
-    font-family: ${fonts.title};
-    font-size: 1.65em;
-    margin-bottom: ${space.space};
-    text-transform: uppercase;
-
-    @media ${media.secondary} {
-      font-size: 2.25em;
-    }
-  }
-
   p {
-    font-family: ${fonts.font};
-    color: ${color.foreground};
-    line-height: 110%;
-    font-size: 1.25em;
-
     a {
       ${mixins.animate};
       color: ${color.foreground};
@@ -147,16 +92,55 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  table {
+    text-align: left;
+    margin-bottom: 3em;
+
+    @media ${media.secondary} {
+      width: 100%;
+    }
+
+    th, td {
+      svg {
+        width: 1em;
+        height: 1em;
+        fill: ${color.foreground};
+      }
+    }
+
+    th {
+      width: 10em;
+      padding: ${space.quarterSpace};
+    }
+
+    td {
+      padding: ${space.quarterSpace};
+    }
+  }
+
   .wrap {
     ${mixins.wrap}
   }
 
-  .collapsed {
-    display: none;
+  .title {
+    margin-bottom: ${space.quarterSpace};
+    font-size: 1.5em;
+    text-transform: uppercase;
   }
 
-  .menu-padding {
-    padding: 2em 0;
+  .font-bold {
+    font-family: ${fonts.fontAlt};
+    text-transform: uppercase;
+  }
+
+  .gluten-free {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      margin-right: 0.4em;
+    }
   }
 `;
 
