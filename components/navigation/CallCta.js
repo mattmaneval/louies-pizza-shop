@@ -9,7 +9,7 @@ const { color, space } = theme;
 const CallCtaStyle = styled.a`
   display: flex;
   align-items: center;
-  color: ${color.foreground};
+  color: ${color.foregroundAlt};
   font-size: 1.85em;
 
   @media ${media.secondary} {
@@ -19,7 +19,7 @@ const CallCtaStyle = styled.a`
   svg {
     width: 1.25em;
     height: 1.25em;
-    fill: ${color.foreground};
+    fill: ${color.foregroundTert};
     margin-right: ${space.quarterSpace};
   }
 `;
