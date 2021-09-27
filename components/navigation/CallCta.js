@@ -16,6 +16,10 @@ const CallCtaStyle = styled.a`
     font-size: 1.25em;
   }
 
+  @media ${media.smallPhone} {
+    font-size: 1em;
+  }
+
   svg {
     width: 1.25em;
     height: 1.25em;

@@ -40,6 +40,14 @@ const MenuItem = ({ data }) => (
       )
       : null }
     <div className="menu-item-options">
+      {data.price.oneSize
+        ? (
+          <div className="menu-item-option">
+            <span>sgl</span>
+            <span className="font-bold">{data.price.oneSize ? data.price.oneSize : null }</span>
+          </div>
+        )
+        : null }
       {data.price.baby
         ? (
           <div className="menu-item-option">
@@ -78,7 +86,7 @@ const MenuItem = ({ data }) => (
       {data.price.sgl
         ? (
           <div className="menu-item-option">
-            <span>single</span>
+            <span>sgl</span>
             <span className="font-bold">{data.price.sgl ? data.price.sgl : null }</span>
             <span className="price-separator">|</span>
           </div>
@@ -87,7 +95,7 @@ const MenuItem = ({ data }) => (
       {data.price.dbl
         ? (
           <div className="menu-item-option">
-            <span> double</span>
+            <span>dbl</span>
             <span className="font-bold">{data.price.dbl ? data.price.dbl : null }</span>
           </div>
         )

@@ -33,7 +33,7 @@ const FooterStyles = styled.footer`
     }
 
     &-hours {
-      max-width: 16em;
+      min-width: 13em;
     }
 
     &-hours-row {
@@ -92,7 +92,7 @@ const Footer = () => (
         <div className="footer-hours">
           <div className="footer-hours-row">
             <span>sunday | thursday</span>
-            <span>11  |  9</span>
+            <span> 11  |  9</span>
           </div>
           <div className="footer-hours-row">
             <span>friday | saturday</span>
