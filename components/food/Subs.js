@@ -10,7 +10,7 @@ const SubsDetails = styled.div`
 const Subs = () => (
   <section>
     <div className="wrap">
-      <h1>subs</h1>
+      <h1>subs & calzones</h1>
       <SubsDetails>
         <div>
           <span>Turn any sub into a calzone | </span>
