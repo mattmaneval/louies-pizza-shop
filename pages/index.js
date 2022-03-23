@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { GlobalStyle } from '../styles';
+import GlobalHeader from '../components/GlobalHeader';
 import Header from '../components/Header';
 import Menu from '../components/navigation/Menu';
 import Footer from '../components/Footer';
@@ -32,6 +33,7 @@ export default function Home() {
         <meta property="twitter:image" content="/meta-tag-image.png" />
       </Head>
       <GlobalStyle />
+      <GlobalHeader />
       <Header />
       <Menu />
       <Footer />

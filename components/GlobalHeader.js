@@ -1,33 +1,19 @@
 import styled from 'styled-components';
-import Link from 'next/link';
-import mixins from '../styles/mixins';
 import media from '../styles/media';
 import theme from '../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color } = theme;
 
 const GlobalHeaderStyles = styled.div`
 
   .global-header {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+    background-color: ${color.foregroundAlt};
+    color: ${color.background};
+    padding: 0.95em 0;
+    text-align: center;
 
-    @media ${media.primary} {
-      display: none;
-    }
-
-    a {
-      ${mixins.animate};
-      font-family: ${fonts.fontheading};
-      color: ${color.foregroundDim};
-      padding: ${space.halfSpace};
-      font-size: 0.85rem;
-      letter-spacing: 0.05rem;
-
-      &:hover {
-        color: ${color.backgroundTert};
-      }
+    @media ${media.secondary} {
+      padding: 0.8em 0;
     }
   }
 `;
@@ -35,15 +21,7 @@ const GlobalHeaderStyles = styled.div`
 const GlobalHeader = () => (
   <GlobalHeaderStyles>
     <div className="global-header">
-      <Link href="/">
-        <a>Contact</a>
-      </Link>
-      <Link href="/menu">
-        <a>Locations</a>
-      </Link>
-      <Link href="/catering">
-        <a>Order</a>
-      </Link>
+      Special &mdash; 2 Topping Bob $25
     </div>
   </GlobalHeaderStyles>
 );
