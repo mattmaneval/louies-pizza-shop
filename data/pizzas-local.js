@@ -30,6 +30,11 @@ export const pizzasData = [
     price: {},
   },
   {
+    name: 'Italian',
+    desc: 'Hard salami, pepperoni, ham, drizzled with italian dressing',
+    price: {},
+  },
+  {
     name: 'Veggie',
     desc: 'Pizza sauce and slaw base, topped with all of our veggies',
     price: {},

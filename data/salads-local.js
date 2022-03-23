@@ -14,7 +14,7 @@ export const saladsData = [
     },
   },
   {
-    name: 'Chicken Cesar',
+    name: 'Chicken Ceasar',
     price: {
       sgl: '6.25',
       bucket: '14.95',
@@ -23,7 +23,7 @@ export const saladsData = [
   {
     name: 'Taco',
     price: {
-      sgl: '6.75',
+      sgl: '6.25',
       bucket: '14.95',
     },
   },
@@ -37,7 +37,7 @@ export const saladsData = [
   {
     name: 'Steak',
     price: {
-      sgl: '6.75',
+      sgl: '6.25',
       bucket: '14.95',
     },
   },

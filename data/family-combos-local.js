@@ -3,7 +3,7 @@ export const familyCombosData = [
     name: 'Variety Pack',
     desc: '2 Small 1 Topping Pizzas, Chicken wings and breadstix',
     price: {
-      oneSize: '29.95',
+      oneSize: '31.80',
     },
   },
   {

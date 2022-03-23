@@ -4,7 +4,7 @@ const sm = 14.95;
 const med = 21.95;
 const lg = 26.95;
 const bob = 36.95;
-const smThin = 14.85;
+const smThin = 14.95;
 const lgThin = 21.95;
 const glutenFree = 18.84;
 

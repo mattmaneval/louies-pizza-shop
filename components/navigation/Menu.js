@@ -53,7 +53,7 @@ const Menu = () => (
           <a>pizza</a>
         </Link>
         <Link href="/subs">
-          <a>subs</a>
+          <a>subs & calzones</a>
         </Link>
         <Link href="/wings-and-things">
           <a>wings</a>

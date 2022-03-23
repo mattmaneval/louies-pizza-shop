@@ -54,6 +54,12 @@ export const sidesData = [
       oneSize: '4.99',
     },
   },
+  {
+    name: 'Mozzarella Stix 6pc',
+    price: {
+      oneSize: '5.25',
+    },
+  },
 ];
 
 export default {
