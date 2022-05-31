@@ -6,7 +6,7 @@ export const iceCreamData = [
       baby: '1.65',
       sm: '1.75',
       med: '2.40',
-      lg: '2.00',
+      lg: '3.00',
     },
   },
   {
@@ -30,24 +30,24 @@ export const iceCreamData = [
     name: 'Turtle Sundae',
     desc: 'Soft serve with hot fudge, caramel, pecans, whipped cream and cherry on top',
     price: {
-      sm: '3.00',
-      lg: '3.95',
+      sm: '3.99',
+      lg: '4.99',
     },
   },
   {
     name: 'Brownie Sundae',
     desc: 'Soft serve with cosmic brownie, hot fudge, whipped cream and cherry on top',
     price: {
-      sm: '3.00',
-      lg: '3.95',
+      sm: '3.99',
+      lg: '4.99',
     },
   },
   {
     name: 'Tin Roof Sundae',
     desc: 'Soft serve with chocolate, peanut butter, peanuts, whipped cream and cherry on top',
     price: {
-      sm: '3.00',
-      lg: '3.95',
+      sm: '3.99',
+      lg: '3.99',
     },
   },
   {

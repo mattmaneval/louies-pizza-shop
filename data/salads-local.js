@@ -37,7 +37,7 @@ export const saladsData = [
   {
     name: 'Steak',
     price: {
-      sgl: '6.25',
+      sgl: '6.75',
       bucket: '14.95',
     },
   },
