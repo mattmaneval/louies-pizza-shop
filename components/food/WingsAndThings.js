@@ -69,7 +69,7 @@ const WingsAndThings = () => (
         <div className="title">Chunks</div>
         <div className="wings-item-desc">
           <span>1/2 lb | </span>
-          <span className="font-bold">8.25</span>
+          <span className="font-bold">8.99</span>
         </div>
         <div className="wings-item-desc">
           <span>Add cheese | </span>

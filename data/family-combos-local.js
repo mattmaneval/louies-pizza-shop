@@ -10,7 +10,7 @@ export const familyCombosData = [
     name: 'Sampler Platter',
     desc: 'Loaded potato skins, boneless chunks, chicken wings and breadstix',
     price: {
-      oneSize: '16.95',
+      oneSize: '20.95',
     },
   },
   {

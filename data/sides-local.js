@@ -2,14 +2,14 @@ export const sidesData = [
   {
     name: 'Loaded Potato Skins',
     price: {
-      oneSize: '8.95',
+      oneSize: '9.99',
     },
   },
   {
     name: 'Cheesy Breadstix',
     price: {
-      sm: '7.25',
-      lg: '11.95',
+      sm: '8.25',
+      lg: '12.95',
     },
   },
   {
@@ -19,21 +19,21 @@ export const sidesData = [
     },
   },
   {
-    name: 'Fries',
+    name: 'Fries (Basket)',
     price: {
-      oneSize: '2.00',
+      oneSize: '2.99',
     },
   },
   {
     name: 'Loaded Cheese Fries',
     price: {
-      oneSize: '8.95',
+      oneSize: '9.50',
     },
   },
   {
     name: 'Macho Nacho',
     price: {
-      oneSize: '10.95',
+      oneSize: '11.50',
     },
   },
   {
@@ -45,7 +45,7 @@ export const sidesData = [
   {
     name: 'Pizza Fries',
     price: {
-      oneSize: '8.95',
+      oneSize: '9.50',
     },
   },
   {
