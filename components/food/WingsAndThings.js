@@ -41,7 +41,7 @@ const WingsAndThings = () => (
   <WingsAndThingsStyle>
     <div className="wrap">
       <h1>wings</h1>
-      <div className="wings-item-options">Sauces: bbq | mild | hot | blaze | butter garlic | asian zing | park garlic</div>
+      <div className="wings-item-options">Sauces: bbq | mild | hot | blaze | butter garlic | asian zing | parm garlic</div>
       <div className="wings-item">
         <div className="title">Traditional</div>
         <div className="wings-item-desc">
