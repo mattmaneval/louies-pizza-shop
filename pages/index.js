@@ -35,7 +35,12 @@ export default function Home() {
       <GlobalStyle />
       <GlobalHeader />
       <Header />
-      <Menu />
+      {/* <Menu /> */}
+      <section>
+        <div className="wrap">
+          We're currently updating our menu. We'll be back soon!
+        </div>
+      </section>
       <Footer />
     </>
   );
