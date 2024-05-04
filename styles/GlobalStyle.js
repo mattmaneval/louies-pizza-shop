@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0.1em 0;
 
     @media ${media.secondary} {
-      font-size: 2.5em;
+      // font-size: 2.5em;
     }
 
     &:hover {

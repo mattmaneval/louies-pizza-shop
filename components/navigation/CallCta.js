@@ -1,38 +1,37 @@
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
-import Phone from '../icons/Phone';
+import PropTypes from 'prop-types';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
-const { color, space } = theme;
+const { color } = theme;
 
 const CallCtaStyle = styled.a`
-  display: flex;
-  align-items: center;
-  color: ${color.foregroundAlt};
-  font-size: 1.85em;
+  display: inline-block;
+  color: ${color.background};
+  background-color: ${color.foregroundAlt};
+  font-size: 1.25em;
+  border: 0.3em solid ${color.foregroundAlt};
+  border-radius: 2em;
+  padding: 0.65em 1em;
+  letter-spacing: 0.025em;
 
   @media ${media.secondary} {
-    font-size: 1.25em;
+    font-size: 1.05em;
   }
 
   @media ${media.smallPhone} {
     font-size: 1em;
   }
-
-  svg {
-    width: 1.25em;
-    height: 1.25em;
-    fill: ${color.foregroundTert};
-    margin-right: ${space.quarterSpace};
-  }
 `;
 
-const CallCta = ({ctaText}) => (
+const CallCta = ({ ctaText }) => (
   <CallCtaStyle href="tel:419-237-3737">
-    <Phone />
-    <span>{ctaText}</span>
+    {ctaText}
   </CallCtaStyle>
 );
+
+CallCta.propTypes = {
+  ctaText: PropTypes.string.isRequired,
+};
 
 export default CallCta;
