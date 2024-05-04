@@ -91,12 +91,14 @@ const Footer = () => (
       <div className="footer-contact">
         <div className="footer-hours">
           <div className="footer-hours-row">
-            <span>sunday | thursday</span>
-            <span> 11  |  9</span>
+            <span>sunday - thursday</span>
+            <span>&nbsp;|&nbsp;</span>
+            <span> 11am - 9pm</span>
           </div>
           <div className="footer-hours-row">
-            <span>friday | saturday</span>
-            <span> 11 | 11</span>
+            <span>friday - saturday</span>
+            <span>&nbsp;|&nbsp;</span>
+            <span> 11am - 10pm</span>
           </div>
         </div>
         <div className="footer-address">
