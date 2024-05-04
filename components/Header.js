@@ -5,7 +5,7 @@ import media from '../styles/media';
 import mixins from '../styles/mixins';
 import theme from '../styles/theme';
 
-const { color, fonts, space } = theme;
+const { color, fonts } = theme;
 
 const HeaderStyles = styled.header`
   padding: 1.5em 0;
@@ -26,7 +26,6 @@ const HeaderStyles = styled.header`
   }
 
   a {
-    padding: 1em;
     transform: translateX(1em);
   }
 `;

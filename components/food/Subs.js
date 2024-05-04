@@ -14,11 +14,11 @@ const Subs = () => (
       <SubsDetails>
         <div>
           <span>Turn any sub into a calzone | </span>
-          <span className="font-bold">8.79</span>
+          <span className="font-bold">9.39</span>
         </div>
         <div>
           <span>Make any sub or calzone a basket with fries and slaw | </span>
-          <span className="font-bold">2.35</span>
+          <span className="font-bold">2.99</span>
         </div>
         <div>
           <span>Extra meat | </span>

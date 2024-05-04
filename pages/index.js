@@ -36,6 +36,11 @@ export default function Home() {
       <GlobalHeader />
       <Header />
       <Menu />
+      {/* <section>
+        <div className="wrap">
+          <h1>We're currently updating our menu. We'll be back soon!</h1>
+        </div>
+      </section> */}
       <Footer />
     </>
   );

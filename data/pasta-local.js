@@ -10,7 +10,7 @@ export const pastaData = [
     name: 'Spaghetti with Meatballs',
     price: {
       sgl: '9.79',
-      fam: '32.95',
+      fam: '32.99',
     },
   },
   {
@@ -24,14 +24,14 @@ export const pastaData = [
     name: 'Chicken Bacon Fettucine Alfredo',
     price: {
       sgl: '9.79',
-      fam: '32.95',
+      fam: '32.99',
     },
   },
   {
     name: 'Chicken Parmesan',
     price: {
       sgl: '9.79',
-      fam: '32.95',
+      fam: '32.99',
     },
   },
 ];

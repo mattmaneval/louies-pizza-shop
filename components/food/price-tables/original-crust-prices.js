@@ -13,27 +13,27 @@ const OriginalCrustPrices = () => (
       <tbody>
         <tr>
           <td>Sm</td>
-          <td className="font-bold">8.25</td>
-          <td className="font-bold">9.30</td>
-          <td className="font-bold">1.25</td>
+          <td className="font-bold">8.79</td>
+          <td className="font-bold">10.18</td>
+          <td className="font-bold">1.39</td>
         </tr>
         <tr>
           <td>Med</td>
-          <td className="font-bold">11.95</td>
-          <td className="font-bold">13.85</td>
-          <td className="font-bold">2.00</td>
+          <td className="font-bold">12.69</td>
+          <td className="font-bold">14.88</td>
+          <td className="font-bold">2.19</td>
         </tr>
         <tr>
           <td>Lg</td>
-          <td className="font-bold">12.65</td>
-          <td className="font-bold">14.95</td>
-          <td className="font-bold">2.30</td>
+          <td className="font-bold">13.49</td>
+          <td className="font-bold">15.98</td>
+          <td className="font-bold">2.49</td>
         </tr>
         <tr>
           <td>Bob</td>
-          <td className="font-bold">22.95</td>
-          <td className="font-bold">26.95</td>
-          <td className="font-bold">3.65</td>
+          <td className="font-bold">24.39</td>
+          <td className="font-bold">28.28</td>
+          <td className="font-bold">3.89</td>
         </tr>
       </tbody>
     </table>
