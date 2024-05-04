@@ -1,12 +1,12 @@
 import GlutenFree from '../../icons/Gluten-free';
 
-const sm = 14.95;
-const med = 21.95;
-const lg = 26.95;
-const bob = 36.95;
-const smThin = 14.95;
-const lgThin = 21.95;
-const glutenFree = 18.84;
+const sm = 14.99;
+const med = 23.29;
+const lg = 28.59;
+const bob = 39.19;
+const smThin = 14.89;
+const lgThin = 21.99;
+const glutenFree = 18.89;
 
 const SpecialtyPizzaPrices = () => (
   <>

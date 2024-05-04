@@ -2,42 +2,42 @@ export const saladsData = [
   {
     name: 'Coleslaw',
     price: {
-      oneSize: '3.95',
+      oneSize: '3.99',
       // bucket: '14.95',
     },
   },
   {
     name: 'Chef',
     price: {
-      oneSize: '6.25',
+      oneSize: '7.49',
       // bucket: '14.95',
     },
   },
   {
     name: 'Chicken Ceasar',
     price: {
-      oneSize: '6.25',
+      oneSize: '7.49',
       // bucket: '14.95',
     },
   },
   {
     name: 'Taco',
     price: {
-      oneSize: '6.25',
+      oneSize: '7.49',
       // bucket: '14.95',
     },
   },
   {
     name: 'House',
     price: {
-      oneSize: '4.99',
+      oneSize: '5.99',
       // bucket: '14.95',
     },
   },
   {
     name: 'Steak',
     price: {
-      oneSize: '6.75',
+      oneSize: '7.49',
       // bucket: '14.95',
     },
   },

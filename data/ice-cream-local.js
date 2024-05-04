@@ -47,7 +47,7 @@ export const iceCreamData = [
     desc: 'Soft serve with chocolate, peanut butter, peanuts, whipped cream and cherry on top',
     price: {
       sm: '3.99',
-      lg: '3.99',
+      lg: '4.99',
     },
   },
   {
