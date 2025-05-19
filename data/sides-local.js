@@ -2,7 +2,7 @@ export const sidesData = [
   {
     name: 'Loaded Potato Skins',
     price: {
-      oneSize: '10.99',
+      oneSize: '11.49',
     },
   },
   {
@@ -27,25 +27,25 @@ export const sidesData = [
   {
     name: 'Loaded Cheese Fries',
     price: {
-      oneSize: '9.99',
+      oneSize: '10.39',
     },
   },
   {
-    name: 'Macho Nacho',
+    name: 'Macho Nachos',
     price: {
-      oneSize: '12.99',
+      oneSize: '13.49',
     },
   },
   {
     name: 'Nelly\'s Nachos',
     price: {
-      oneSize: '10.99',
+      oneSize: '11.49',
     },
   },
   {
     name: 'Pizza Fries',
     price: {
-      oneSize: '9.99',
+      oneSize: '10.39',
     },
   },
   {

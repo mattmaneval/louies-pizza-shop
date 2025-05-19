@@ -1,6 +1,6 @@
 import GlutenFree from '../../icons/Gluten-free';
 
-const sm = 14.99;
+const sm = 15.59;
 const med = 23.29;
 const lg = 28.59;
 const bob = 39.19;

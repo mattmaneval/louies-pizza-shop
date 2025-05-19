@@ -3,9 +3,9 @@ export const drinksData = [
     name: 'Fountain Soda',
     desc: 'Pepsi, Mountain Dew',
     price: {
-      sm: '1.09',
-      med: '1.59',
-      lg: '1.99',
+      sm: '1.49',
+      med: '1.99',
+      lg: '2.49',
     },
   },
   {

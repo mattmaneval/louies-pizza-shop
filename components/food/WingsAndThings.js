@@ -46,23 +46,23 @@ const WingsAndThings = () => (
         <div className="title">Traditional</div>
         <div className="wings-item-desc">
           <span>6 | </span>
-          <span className="font-bold">7.99</span>
+          <span className="font-bold">8.99</span>
         </div>
         <div className="wings-item-desc">
           <span>12 | </span>
-          <span className="font-bold">14.89</span>
+          <span className="font-bold">15.89</span>
         </div>
         <div className="wings-item-desc">
           <span>18 | </span>
-          <span className="font-bold">21.79</span>
+          <span className="font-bold">22.79</span>
         </div>
         <div className="wings-item-desc">
           <span>24 | </span>
-          <span className="font-bold">28.69</span>
+          <span className="font-bold">29.69</span>
         </div>
         <div className="wings-item-desc">
           <span>50 | </span>
-          <span className="font-bold">53.59</span>
+          <span className="font-bold">55.89</span>
         </div>
       </div>
       <div className="wings-item">

@@ -22,11 +22,11 @@ const Subs = () => (
         </div>
         <div>
           <span>Extra meat | </span>
-          <span className="font-bold">1.35</span>
+          <span className="font-bold">1.89</span>
         </div>
         <div>
           <span>Extra cheese | </span>
-          <span className="font-bold">.65</span>
+          <span className="font-bold">.99</span>
         </div>
       </SubsDetails>
       {Object.keys(subsData).map((key) => (
