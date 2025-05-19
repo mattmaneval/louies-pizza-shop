@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import ArrowUpRight from '../icons/ArrowUpRight';
+// import ArrowUpRight from '../icons/ArrowUpRight';
 import media from '../../styles/media';
 import theme from '../../styles/theme';
 
