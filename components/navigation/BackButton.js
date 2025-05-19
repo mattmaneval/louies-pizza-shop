@@ -42,9 +42,7 @@ const BackButtonStyle = styled.div`
 const BackButton = () => (
   <BackButtonStyle>
     <Link href="/">
-      <a>
-        <ArrowLeftCircle />
-      </a>
+      <ArrowLeftCircle />
     </Link>
   </BackButtonStyle>
 );

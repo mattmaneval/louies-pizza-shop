@@ -50,34 +50,34 @@ const Menu = () => (
       </div>
       <nav>
         <Link href="/pizza">
-          <a>pizza</a>
+          pizza
         </Link>
         <Link href="/subs">
-          <a>subs & calzones</a>
+          subs & calzones
         </Link>
         <Link href="/wings-and-things">
-          <a>wings</a>
+          wings
         </Link>
         <Link href="/burgers">
-          <a>burgers</a>
+          burgers
         </Link>
         <Link href="/family-combos">
-          <a>family combos</a>
+          family combos
         </Link>
         <Link href="/sides">
-          <a>sides</a>
+          sides
         </Link>
         <Link href="/pasta">
-          <a>pasta</a>
+          pasta
         </Link>
         <Link href="/salads">
-          <a>salads</a>
+          salads
         </Link>
         <Link href="/ice-cream">
-          <a>ice cream</a>
+          ice cream
         </Link>
         <Link href="/drinks">
-          <a>drinks</a>
+          drinks
         </Link>
       </nav>
     </div>
